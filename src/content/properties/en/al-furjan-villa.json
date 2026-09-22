@@ -1,0 +1,49 @@
+{
+  "order": 3,
+  "title": "Luxury 5-Bedroom Standalone Villa",
+  "subtitle": "Private Pool | Furnished | Built by a Private Developer",
+  "community": "Al Furjan",
+  "building": "Al Furjan West",
+  "location": "Al Furjan West, Al Furjan, Dubai",
+  "price": "AED 12,500,000",
+  "priceNote": "Ref. 109105-6rlHS7",
+  "type": "Standalone Villa",
+  "purpose": "For Sale",
+  "beds": 5,
+  "baths": 6,
+  "size": "6,591 sq. ft. (612.31 m²)",
+  "floor": "2 Storeys",
+  "furnishing": "Furnished",
+  "view": "Private Swimming Pool",
+  "videoUrl": "https://www.youtube.com/embed/rHOnidNO_wM",
+  "images": ["/assets/img/properties/al-furjan-villa/01.jpg","/assets/img/properties/al-furjan-villa/02.jpg","/assets/img/properties/al-furjan-villa/03.jpg","/assets/img/properties/al-furjan-villa/04.jpg","/assets/img/properties/al-furjan-villa/05.jpg","/assets/img/properties/al-furjan-villa/06.jpg","/assets/img/properties/al-furjan-villa/07.jpg","/assets/img/properties/al-furjan-villa/08.jpg","/assets/img/properties/al-furjan-villa/09.jpg","/assets/img/properties/al-furjan-villa/10.jpg","/assets/img/properties/al-furjan-villa/11.jpg","/assets/img/properties/al-furjan-villa/12.jpg","/assets/img/properties/al-furjan-villa/13.jpg","/assets/img/properties/al-furjan-villa/14.jpg","/assets/img/properties/al-furjan-villa/15.jpg","/assets/img/properties/al-furjan-villa/16.jpg","/assets/img/properties/al-furjan-villa/17.jpg","/assets/img/properties/al-furjan-villa/18.jpg","/assets/img/properties/al-furjan-villa/19.jpg","/assets/img/properties/al-furjan-villa/20.jpg","/assets/img/properties/al-furjan-villa/21.jpg","/assets/img/properties/al-furjan-villa/22.jpg","/assets/img/properties/al-furjan-villa/23.jpg","/assets/img/properties/al-furjan-villa/24.jpg","/assets/img/properties/al-furjan-villa/25.jpg","/assets/img/properties/al-furjan-villa/26.jpg","/assets/img/properties/al-furjan-villa/27.jpg","/assets/img/properties/al-furjan-villa/28.jpg","/assets/img/properties/al-furjan-villa/29.jpg","/assets/img/properties/al-furjan-villa/30.jpg","/assets/img/properties/al-furjan-villa/31.jpg","/assets/img/properties/al-furjan-villa/32.jpg","/assets/img/properties/al-furjan-villa/33.jpg","/assets/img/properties/al-furjan-villa/34.jpg","/assets/img/properties/al-furjan-villa/35.jpg","/assets/img/properties/al-furjan-villa/36.jpg","/assets/img/properties/al-furjan-villa/37.jpg","/assets/img/properties/al-furjan-villa/38.jpg","/assets/img/properties/al-furjan-villa/39.jpg","/assets/img/properties/al-furjan-villa/40.jpg","/assets/img/properties/al-furjan-villa/41.jpg","/assets/img/properties/al-furjan-villa/42.jpg","/assets/img/properties/al-furjan-villa/43.jpg","/assets/img/properties/al-furjan-villa/44.jpg","/assets/img/properties/al-furjan-villa/45.jpg","/assets/img/properties/al-furjan-villa/46.jpg","/assets/img/properties/al-furjan-villa/47.jpg","/assets/img/properties/al-furjan-villa/48.jpg","/assets/img/properties/al-furjan-villa/49.jpg","/assets/img/properties/al-furjan-villa/50.jpg","/assets/img/properties/al-furjan-villa/51.jpg","/assets/img/properties/al-furjan-villa/52.jpg","/assets/img/properties/al-furjan-villa/53.jpg","/assets/img/properties/al-furjan-villa/54.jpg","/assets/img/properties/al-furjan-villa/55.jpg","/assets/img/properties/al-furjan-villa/56.jpg","/assets/img/properties/al-furjan-villa/57.jpg","/assets/img/properties/al-furjan-villa/58.jpg","/assets/img/properties/al-furjan-villa/59.jpg"],
+  "description": [
+    "Nova Casa Real Estate is proud to present this exceptional 5-bedroom standalone villa in the prestigious Al Furjan West community, one of Dubai's desirable family destinations.",
+    "Perfectly positioned between Sheikh Zayed Road (E11) and Sheikh Mohammed Bin Zayed Road (E311), Al Furjan West offers excellent connectivity to Dubai Marina, JBR, Palm Jumeirah, Expo City Dubai, Al Maktoum International Airport and Downtown Dubai.",
+    "Built by a private developer, this stunning villa stands out with its exceptional craftsmanship, elegant architectural design and premium-quality finishes throughout. Every detail has been carefully considered to create a luxurious yet practical home for modern family living.",
+    "Ground floor — Bright formal living room, elegant dining area, fully equipped show kitchen, separate closed preparation kitchen with direct views of the private pool, maid's room with en-suite bathroom, driver's room with en-suite bathroom, covered garage and outdoor spaces.",
+    "First floor — Five luxurious en-suite bedroom suites, an upstairs family lounge (usable as a TV room, children's play area or home office), and large balconies."
+  ],
+  "features": [
+    "5 spacious en-suite bedrooms",
+    "Private swimming pool",
+    "Show kitchen + separate prep kitchen",
+    "Maid's & driver's room, both en-suite",
+    "Covered garage",
+    "High-end finishes throughout",
+    "Furnished, ready to move in",
+    "Built by a private developer"
+  ],
+  "amenities": [
+    "Al Furjan Club & Pavilion",
+    "Schools: The Arbor School, The Winchester School, Delhi Private School"
+  ],
+  "nearby": [
+    "Dubai Marina & JBR",
+    "Palm Jumeirah",
+    "Expo City Dubai",
+    "Al Maktoum International Airport",
+    "Downtown Dubai",
+    "Ibn Battuta Mall"
+  ]
+}

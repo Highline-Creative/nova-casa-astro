@@ -1,0 +1,53 @@
+{
+  "order": 1,
+  "title": "Duplex Reformado de 1 Quarto, Vista para o Lago",
+  "subtitle": "Andar Alto | Vista para o Lago | Totalmente Mobiliado",
+  "community": "Jumeirah Lake Towers (JLT)",
+  "building": "Jumeirah Bay X1",
+  "location": "Jumeirah Bay X1, Jumeirah Lake Towers (JLT), Dubai",
+  "price": "AED 2.200.000",
+  "priceNote": "Freehold",
+  "type": "Duplex de 1 Quarto",
+  "purpose": "Venda",
+  "beds": 1,
+  "baths": 2,
+  "size": "90,8 m² (977.58 pés²)",
+  "parking": "1 Vaga",
+  "floor": "Andar Alto",
+  "furnishing": "Totalmente Mobiliado",
+  "videoUrl": "https://www.youtube.com/embed/ncwee62o100",
+  "images": ["/assets/img/properties/jumeirah-bay/01.jpg","/assets/img/properties/jumeirah-bay/02.jpg","/assets/img/properties/jumeirah-bay/03.jpg","/assets/img/properties/jumeirah-bay/04.jpg","/assets/img/properties/jumeirah-bay/05.jpg","/assets/img/properties/jumeirah-bay/06.jpg","/assets/img/properties/jumeirah-bay/07.jpg","/assets/img/properties/jumeirah-bay/08.jpg","/assets/img/properties/jumeirah-bay/09.jpg","/assets/img/properties/jumeirah-bay/10.jpg","/assets/img/properties/jumeirah-bay/11.jpg","/assets/img/properties/jumeirah-bay/12.jpg","/assets/img/properties/jumeirah-bay/13.jpg","/assets/img/properties/jumeirah-bay/14.jpg","/assets/img/properties/jumeirah-bay/15.jpg","/assets/img/properties/jumeirah-bay/16.jpg","/assets/img/properties/jumeirah-bay/17.jpg","/assets/img/properties/jumeirah-bay/18.jpg","/assets/img/properties/jumeirah-bay/19.jpg","/assets/img/properties/jumeirah-bay/20.jpg"],
+  "description": [
+    "A Nova Casa Real Estate tem o prazer de apresentar este deslumbrante duplex de 1 quarto, totalmente reformado, no Jumeirah Bay X1, JLT.",
+    "Com 90,8 m², este imóvel oferece um layout duplex espaçoso, interiores contemporâneos e vista de tirar o fôlego do lago da JLT, a partir de um andar alto.",
+    "O apartamento foi totalmente reformado e mobiliado, com acabamentos modernos e um interior sofisticado, pronto para ocupação imediata. A configuração em duplex cria uma separação natural entre as áreas social e privativa, unindo funcionalidade e amplitude.",
+    "Pela localização privilegiada, layout diferenciado e condição mobiliada, é uma excelente opção tanto para quem vai morar quanto para investidores em busca de um imóvel diferenciado em JLT."
+  ],
+  "features": [
+    "Vista deslumbrante para o lago da JLT",
+    "Duplex em andar alto",
+    "Totalmente reformado",
+    "Totalmente mobiliado",
+    "90,8 m² de área espaçosa",
+    "1 vaga de garagem",
+    "Pronto para morar",
+    "Propriedade freehold"
+  ],
+  "amenities": [
+    "Piscina",
+    "Academia / Health Club",
+    "Jacuzzi",
+    "Sauna",
+    "Sala de vapor",
+    "Área de churrasco",
+    "Playground infantil",
+    "Jardim / gramado",
+    "Creche no condomínio",
+    "Cafeteria",
+    "Concierge 24h",
+    "Segurança 24h",
+    "CFTV",
+    "Sala de oração"
+  ],
+  "nearby": []
+}

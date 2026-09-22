@@ -1,0 +1,48 @@
+{
+  "order": 7,
+  "title": "Sobrado Reformado com 3 Quartos",
+  "subtitle": "Desocupado na Transferência | Totalmente Reformado | Condomínio Fechado",
+  "community": "DAMAC Hills 2 (Akoya by DAMAC)",
+  "building": "Sycamore",
+  "location": "Sycamore, DAMAC Hills 2 (Akoya by DAMAC), Dubai",
+  "price": "AED 2.300.000",
+  "priceNote": "Freehold · Ref. 109105-JFHlGi",
+  "type": "Sobrado (Townhouse)",
+  "purpose": "Venda",
+  "beds": 3,
+  "baths": 3,
+  "size": "174,47 m² (1.878 pés²)",
+  "parking": "2 Vagas",
+  "furnishing": "Sem Mobília",
+  "videoUrl": "https://www.youtube.com/embed/OB3FXKG8qeA",
+  "images": ["/assets/img/properties/sycamore-damac-hills-2/01.webp","/assets/img/properties/sycamore-damac-hills-2/02.jpg","/assets/img/properties/sycamore-damac-hills-2/03.jpg","/assets/img/properties/sycamore-damac-hills-2/04.jpg","/assets/img/properties/sycamore-damac-hills-2/05.jpg","/assets/img/properties/sycamore-damac-hills-2/06.jpg","/assets/img/properties/sycamore-damac-hills-2/07.jpg","/assets/img/properties/sycamore-damac-hills-2/08.jpg","/assets/img/properties/sycamore-damac-hills-2/09.jpg","/assets/img/properties/sycamore-damac-hills-2/10.jpg","/assets/img/properties/sycamore-damac-hills-2/11.jpg","/assets/img/properties/sycamore-damac-hills-2/12.webp","/assets/img/properties/sycamore-damac-hills-2/13.jpg","/assets/img/properties/sycamore-damac-hills-2/14.jpg","/assets/img/properties/sycamore-damac-hills-2/15.jpg","/assets/img/properties/sycamore-damac-hills-2/16.jpg","/assets/img/properties/sycamore-damac-hills-2/17.jpg","/assets/img/properties/sycamore-damac-hills-2/18.jpg","/assets/img/properties/sycamore-damac-hills-2/19.jpg","/assets/img/properties/sycamore-damac-hills-2/20.jpg","/assets/img/properties/sycamore-damac-hills-2/21.jpg","/assets/img/properties/sycamore-damac-hills-2/22.jpg","/assets/img/properties/sycamore-damac-hills-2/23.jpg","/assets/img/properties/sycamore-damac-hills-2/24.jpg","/assets/img/properties/sycamore-damac-hills-2/25.jpg"],
+  "description": [
+    "A Nova Casa Real Estate tem o prazer de oferecer este charmoso sobrado de 3 quartos no DAMAC Hills 2 - Cluster Sycamore. Com uma cozinha reformada com carinho e mantido impecavelmente, tem um dos layouts mais desejados disponíveis dentro da DAMAC."
+  ],
+  "features": [
+    "Desocupado na transferência",
+    "Totalmente reformado",
+    "Cozinha atualizada",
+    "Layout impressionante",
+    "Impecavelmente mantido",
+    "Localização tranquila",
+    "Condomínio fechado",
+    "Lar perfeito para a família"
+  ],
+  "amenities": [
+    "Academia do condomínio",
+    "Clínica",
+    "Restaurantes e mercado",
+    "Piscina",
+    "Quadras de tênis e squash",
+    "Berçário e área de recreação",
+    "Quadra de basquete",
+    "Parque aquático do condomínio",
+    "Jardins comunitários",
+    "Academia ao ar livre",
+    "Área de churrasco",
+    "Café à beira d'água",
+    "Transporte gratuito diário"
+  ],
+  "nearby": []
+}

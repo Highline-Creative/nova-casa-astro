@@ -1,0 +1,50 @@
+{
+  "order": 6,
+  "title": "Unidade de Esquina com 3 Quartos, Vista Total do Creek",
+  "subtitle": "Andar Alto | Unidade de Esquina | Sem Mobília",
+  "community": "Al Jaddaf",
+  "building": "Binghatti Creek",
+  "location": "Binghatti Creek, Al Jaddaf, Dubai",
+  "price": "AED 2.200.000",
+  "priceNote": "Freehold · Ref. 109105-6mqbtD",
+  "type": "Apartamento",
+  "purpose": "Venda",
+  "beds": 3,
+  "baths": 2,
+  "size": "141,21 m² (1.519.97 pés²)",
+  "parking": "1 Vaga",
+  "floor": "Andar Alto",
+  "furnishing": "Sem Mobília",
+  "videoUrl": "https://www.youtube.com/embed/KHqJ1e09Nsc",
+  "images": ["/assets/img/properties/binghatti-creek/01.jpg","/assets/img/properties/binghatti-creek/02.jpg","/assets/img/properties/binghatti-creek/03.jpg","/assets/img/properties/binghatti-creek/04.jpg","/assets/img/properties/binghatti-creek/05.jpg","/assets/img/properties/binghatti-creek/06.jpg","/assets/img/properties/binghatti-creek/07.jpg","/assets/img/properties/binghatti-creek/08.jpg","/assets/img/properties/binghatti-creek/09.jpg","/assets/img/properties/binghatti-creek/10.jpg","/assets/img/properties/binghatti-creek/11.jpg","/assets/img/properties/binghatti-creek/12.jpg","/assets/img/properties/binghatti-creek/13.jpg","/assets/img/properties/binghatti-creek/14.jpg","/assets/img/properties/binghatti-creek/15.jpg","/assets/img/properties/binghatti-creek/16.jpg","/assets/img/properties/binghatti-creek/17.jpg"],
+  "description": [
+    "A Nova Casa Real Estate tem o prazer de apresentar este excepcional apartamento de 3 quartos no Binghatti Creek, Al Jaddaf. Esta unidade de esquina em andar alto oferece uma vista deslumbrante e total do Creek, espaços amplos e muita luz natural — uma excelente escolha tanto para moradia quanto para investimento."
+  ],
+  "features": [
+    "Andar alto, unidade de esquina",
+    "Vista total do Creek",
+    "2 varandas espaçosas",
+    "141,21 m² de área",
+    "Cozinha aberta contemporânea",
+    "Muita luz natural",
+    "Sem mobília",
+    "1 vaga de garagem",
+    "Freehold"
+  ],
+  "amenities": [
+    "Sistema de casa inteligente",
+    "Academia completa",
+    "Piscina adulto e infantil",
+    "Vestiários masculino e feminino",
+    "Jardins paisagísticos",
+    "Lojas",
+    "Cafés e restaurantes"
+  ],
+  "nearby": [
+    "A pé até a estação de metrô Al Jaddaf",
+    "1 min até o Zabeel Palace Park",
+    "10 min até o Aeroporto Internacional de Dubai",
+    "11 min até Downtown Dubai",
+    "20 min até Palm Jumeirah"
+  ]
+}

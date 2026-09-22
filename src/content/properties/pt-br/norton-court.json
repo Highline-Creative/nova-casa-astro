@@ -1,0 +1,43 @@
+{
+  "order": 8,
+  "title": "Reformado, 2 Quartos, de Frente para o Parque",
+  "subtitle": "Reformado | Frente para o Parque | Desocupado na Transferência",
+  "community": "Uptown Motor City",
+  "building": "Norton Court 1",
+  "location": "Norton Court 1, Uptown Motor City, Dubai",
+  "price": "AED 1.820.000",
+  "priceNote": "Aprox. AED 8.470/m²",
+  "type": "Apartamento",
+  "purpose": "Venda",
+  "beds": 2,
+  "baths": 3,
+  "size": "133,69 m² (1.439 pés²)",
+  "view": "Parque",
+  "furnishing": "Reformado",
+  "status": "Desocupado na Transferência",
+  "videoUrl": "https://www.youtube.com/embed/jj34rpZ_LWQ",
+  "images": ["/assets/img/properties/norton-court/01.webp","/assets/img/properties/norton-court/02.webp","/assets/img/properties/norton-court/03.webp","/assets/img/properties/norton-court/04.webp","/assets/img/properties/norton-court/05.webp","/assets/img/properties/norton-court/06.webp","/assets/img/properties/norton-court/07.webp","/assets/img/properties/norton-court/08.webp","/assets/img/properties/norton-court/09.webp","/assets/img/properties/norton-court/10.webp","/assets/img/properties/norton-court/11.webp","/assets/img/properties/norton-court/12.webp","/assets/img/properties/norton-court/13.webp","/assets/img/properties/norton-court/14.webp","/assets/img/properties/norton-court/15.webp","/assets/img/properties/norton-court/16.webp","/assets/img/properties/norton-court/17.webp","/assets/img/properties/norton-court/18.webp","/assets/img/properties/norton-court/19.webp","/assets/img/properties/norton-court/20.webp","/assets/img/properties/norton-court/21.webp","/assets/img/properties/norton-court/22.webp","/assets/img/properties/norton-court/23.webp","/assets/img/properties/norton-court/24.webp","/assets/img/properties/norton-court/25.webp","/assets/img/properties/norton-court/26.webp","/assets/img/properties/norton-court/27.webp","/assets/img/properties/norton-court/28.webp"],
+  "description": [
+    "A Nova Casa Real Estate apresenta este lindo apartamento de 2 quartos, totalmente reformado, no Norton Court 1, dentro da popular comunidade Uptown Motor City.",
+    "Com aproximadamente 133,69 m² de área, o imóvel tem um layout espaçoso e uma posição privilegiada de frente para o parque. O apartamento foi reformado e ficará desocupado na transferência — ótima opção tanto para quem quer se mudar quanto para investidores que buscam boa rentabilidade.",
+    "Uptown Motor City é uma comunidade familiar conhecida pelo entorno verde, áreas paisagísticas, parques, trilhas para caminhada e fácil acesso a vias principais e comércio no dia a dia."
+  ],
+  "features": [
+    "2 quartos, 3 banheiros",
+    "133,69 m²",
+    "Reformado",
+    "De frente para o parque",
+    "Desocupado na transferência",
+    "Layout espaçoso",
+    "Comunidade familiar",
+    "Excelente oportunidade de investimento"
+  ],
+  "amenities": [
+    "Áreas paisagísticas e espaços verdes",
+    "Parques e áreas para caminhada",
+    "Restaurantes e cafés nas proximidades",
+    "Comércio e serviços no dia a dia nas proximidades",
+    "Fácil acesso a vias principais"
+  ],
+  "nearby": []
+}

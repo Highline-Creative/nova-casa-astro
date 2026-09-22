@@ -1,0 +1,49 @@
+{
+  "order": 5,
+  "title": "3 Quartos + Quarto de Empregada, Para Alugar",
+  "subtitle": "Andar Alto | Sem Mobília | Múltiplas Varandas",
+  "community": "Dubai Silicon Oasis (DSO)",
+  "building": "Ayat Oasis",
+  "location": "Ayat Oasis, Dubai Silicon Oasis (DSO), Dubai",
+  "price": "AED 125.000",
+  "priceNote": "Por Ano · Ref. 109105-XQhg4S",
+  "type": "Apartamento",
+  "purpose": "Aluguel",
+  "beds": 3,
+  "baths": 4,
+  "size": "203,32 m² (2.188.41 pés²)",
+  "parking": "2 Cobertas",
+  "floor": "Andar Alto",
+  "furnishing": "Sem Mobília",
+  "images": ["/assets/img/properties/ayat-oasis-rent/01.webp","/assets/img/properties/ayat-oasis-rent/02.webp","/assets/img/properties/ayat-oasis-rent/03.webp","/assets/img/properties/ayat-oasis-rent/04.webp","/assets/img/properties/ayat-oasis-rent/05.webp","/assets/img/properties/ayat-oasis-rent/06.webp","/assets/img/properties/ayat-oasis-rent/07.webp","/assets/img/properties/ayat-oasis-rent/08.webp","/assets/img/properties/ayat-oasis-rent/09.webp","/assets/img/properties/ayat-oasis-rent/10.webp","/assets/img/properties/ayat-oasis-rent/11.webp","/assets/img/properties/ayat-oasis-rent/12.webp","/assets/img/properties/ayat-oasis-rent/13.webp","/assets/img/properties/ayat-oasis-rent/14.webp","/assets/img/properties/ayat-oasis-rent/15.webp","/assets/img/properties/ayat-oasis-rent/16.webp","/assets/img/properties/ayat-oasis-rent/17.webp","/assets/img/properties/ayat-oasis-rent/18.webp","/assets/img/properties/ayat-oasis-rent/19.webp","/assets/img/properties/ayat-oasis-rent/20.webp","/assets/img/properties/ayat-oasis-rent/21.webp","/assets/img/properties/ayat-oasis-rent/22.webp","/assets/img/properties/ayat-oasis-rent/23.webp","/assets/img/properties/ayat-oasis-rent/24.webp","/assets/img/properties/ayat-oasis-rent/25.webp","/assets/img/properties/ayat-oasis-rent/26.webp","/assets/img/properties/ayat-oasis-rent/27.webp","/assets/img/properties/ayat-oasis-rent/28.webp","/assets/img/properties/ayat-oasis-rent/29.webp","/assets/img/properties/ayat-oasis-rent/30.webp","/assets/img/properties/ayat-oasis-rent/31.webp","/assets/img/properties/ayat-oasis-rent/32.webp","/assets/img/properties/ayat-oasis-rent/33.webp","/assets/img/properties/ayat-oasis-rent/34.webp","/assets/img/properties/ayat-oasis-rent/35.webp"],
+  "description": [
+    "A Nova Casa Real Estate tem o orgulho de apresentar este espaçoso apartamento de 3 quartos mais quarto de empregada no Ayat Oasis, em Dubai Silicon Oasis, disponível para locação.",
+    "O imóvel oferece um layout amplo e bem distribuído, com 203,32 m² de área, interiores claros e arejados, e múltiplas varandas com vista para o Cedre Villas e o skyline da comunidade.",
+    "O apartamento tem três quartos mais quarto de empregada, quatro banheiros, lavanderia e duas vagas cobertas — uma excelente oportunidade para famílias que buscam um lar amplo e confortável em uma comunidade já consolidada de Dubai."
+  ],
+  "features": [
+    "3 quartos + quarto de empregada",
+    "Layout amplo e espaçoso",
+    "Interiores claros e arejados",
+    "Múltiplas varandas",
+    "Vista comunidade/skyline",
+    "Lavanderia",
+    "2 vagas cobertas",
+    "Ar-condicionado central"
+  ],
+  "amenities": [
+    "Piscina",
+    "Academia / Health Club",
+    "Playground infantil",
+    "Segurança 24h",
+    "Elevadores de alta velocidade",
+    "Lobby bem cuidado",
+    "Estrutura para pessoas com deficiência"
+  ],
+  "nearby": [
+    "Aeroporto Internacional de Dubai — aprox. 15–20 min",
+    "Downtown Dubai — aprox. 20 min",
+    "Dubai Creek Harbour — aprox. 15 min",
+    "Academic City — aprox. 10 min"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "order": 6,
+  "title": "3-Bedroom Corner Unit, Full Creek View",
+  "subtitle": "High Floor | Corner Unit | Unfurnished",
+  "community": "Al Jaddaf",
+  "building": "Binghatti Creek",
+  "location": "Binghatti Creek, Al Jaddaf, Dubai",
+  "price": "AED 2,200,000",
+  "priceNote": "Freehold · Ref. 109105-6mqbtD",
+  "type": "Apartment",
+  "purpose": "For Sale",
+  "beds": 3,
+  "baths": 2,
+  "size": "1,519.97 sq. ft.",
+  "parking": "1 Space",
+  "floor": "High Floor",
+  "furnishing": "Unfurnished",
+  "status": "Vacant",
+  "videoUrl": "https://www.youtube.com/embed/KHqJ1e09Nsc",
+  "images": ["/assets/img/properties/binghatti-creek/01.jpg","/assets/img/properties/binghatti-creek/02.jpg","/assets/img/properties/binghatti-creek/03.jpg","/assets/img/properties/binghatti-creek/04.jpg","/assets/img/properties/binghatti-creek/05.jpg","/assets/img/properties/binghatti-creek/06.jpg","/assets/img/properties/binghatti-creek/07.jpg","/assets/img/properties/binghatti-creek/08.jpg","/assets/img/properties/binghatti-creek/09.jpg","/assets/img/properties/binghatti-creek/10.jpg","/assets/img/properties/binghatti-creek/11.jpg","/assets/img/properties/binghatti-creek/12.jpg","/assets/img/properties/binghatti-creek/13.jpg","/assets/img/properties/binghatti-creek/14.jpg","/assets/img/properties/binghatti-creek/15.jpg","/assets/img/properties/binghatti-creek/16.jpg","/assets/img/properties/binghatti-creek/17.jpg"],
+  "description": [
+    "Nova Casa Real Estate is delighted to present this exceptional 3-bedroom apartment in Binghatti Creek, Al Jaddaf. This high-floor corner unit offers breathtaking full Creek views, generous living spaces and abundant natural light, making it an excellent choice for both end-users and investors."
+  ],
+  "features": [
+    "High floor, corner unit",
+    "Full Creek view",
+    "2 spacious balconies",
+    "Contemporary open kitchen",
+    "Abundant natural light",
+    "1 parking space",
+    "Freehold",
+    "Vacant"
+  ],
+  "amenities": [
+    "Smart home system",
+    "Fully equipped gym",
+    "Adult & kids swimming pools",
+    "Male & female changing rooms",
+    "Landscaped gardens",
+    "Retail outlets",
+    "Cafés & restaurants"
+  ],
+  "nearby": [
+    "Walking distance to Al Jaddaf Metro Station",
+    "1 min to Zabeel Palace Park",
+    "10 min to Dubai International Airport",
+    "11 min to Downtown Dubai",
+    "20 min to Palm Jumeirah"
+  ]
+}

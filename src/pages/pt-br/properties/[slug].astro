@@ -1,0 +1,140 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Gallery from "../../../components/Gallery.astro";
+import PropertyCard from "../../../components/PropertyCard.astro";
+import business from "../../../content/business.json";
+
+export async function getStaticPaths() {
+  const properties = await getCollection("properties-pt");
+  return properties.map((p) => ({ params: { slug: p.id }, props: { entry: p } }));
+}
+
+const { entry } = Astro.props;
+const p = entry.data;
+const allProperties = (await getCollection("properties-pt")).sort((a, b) => a.data.order - b.data.order);
+const related = allProperties.filter((o) => o.id !== entry.id).slice(0, 3);
+
+const facts = [
+  { value: String(p.beds), label: p.beds === 1 ? "Quarto" : "Quartos" },
+  { value: String(p.baths), label: p.baths === 1 ? "Banheiro" : "Banheiros" },
+  { value: p.size, label: "Área" },
+  p.floor ? { value: p.floor, label: "Andar" } : null,
+  p.view ? { value: p.view, label: "Vista" } : null,
+  p.balcony ? { value: p.balcony, label: "Varanda" } : null,
+  { value: p.furnishing, label: "Mobília" },
+  p.parking ? { value: p.parking, label: "Garagem" } : null,
+  p.status ? { value: p.status, label: "Status" } : null,
+].filter((f): f is { value: string; label: string } => Boolean(f)).slice(0, 6);
+
+const whatsappContext = `o ${p.title} em ${p.community}${p.priceNote?.startsWith("Ref.") ? ` (${p.price}, ${p.priceNote})` : ` (${p.price})`}`;
+const mailSubject = encodeURIComponent(`Interesse — ${p.title}`);
+---
+<BaseLayout
+  lang="pt-br"
+  title={`${p.title} | Nova Casa Real Estate`}
+  description={`${p.title} em ${p.community}, Dubai. ${p.price}. Apresentado pela Nova Casa Real Estate.`}
+  ogPath={`/pt-br/properties/${entry.id}`}
+  currentNav="properties"
+>
+  <div class="container">
+    <p class="breadcrumb"><a href="/pt-br">Início</a> / <a href="/pt-br#properties">Imóveis</a> / {p.community}</p>
+
+    <div class="pd-head">
+      <div class="pd-title-wrap">
+        <span class="eyebrow">{p.type} · {p.purpose}</span>
+        <h1>{p.title}</h1>
+        <p class="pd-loc">{p.location}</p>
+      </div>
+      <div class="pd-price">{p.price}{p.priceNote && <span>{p.priceNote}</span>}</div>
+    </div>
+
+    <Gallery images={p.images} title={p.title} lang="pt-br" />
+
+    {p.videoUrl && (
+      <div class="video-tour">
+        <h3>Vídeo do Imóvel</h3>
+        <div class="video-embed">
+          <iframe src={p.videoUrl} title={`Vídeo do imóvel — ${p.title}`} loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    )}
+
+    <div class="pd-layout">
+      <div>
+        <div class="fact-grid">
+          {facts.map((f) => (
+            <div class="fact"><b>{f.value}</b><span>{f.label}</span></div>
+          ))}
+        </div>
+
+        <h2>Sobre este imóvel</h2>
+        {p.description.map((para) => <p>{para}</p>)}
+
+        <h3>Principais características</h3>
+        <ul class="check-list">
+          {p.features.map((f) => <li>{f}</li>)}
+        </ul>
+
+        {p.amenities.length > 0 && (
+          <Fragment>
+            <h3>Comodidades do condomínio</h3>
+            <ul class="check-list">
+              {p.amenities.map((a) => <li>{a}</li>)}
+            </ul>
+          </Fragment>
+        )}
+
+        {p.nearby && p.nearby.length > 0 && (
+          <Fragment>
+            <h3>Localização e arredores</h3>
+            <ul class="check-list">
+              {p.nearby.map((n) => <li>{n}</li>)}
+            </ul>
+          </Fragment>
+        )}
+      </div>
+
+      <aside class="sidebar-card">
+        <h3>Agendar uma visita</h3>
+        <a class="btn btn-whatsapp btn-block" data-whatsapp={whatsappContext}>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.7 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.1.2-3.6-.8-3-1.2-4.9-4.2-5-4.4-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.2.1.3 0 .5-.1.2-.1.3-.3.5l-.4.5c-.1.2-.3.3-.1.6.2.3.9 1.5 2 2.4 1.4 1.2 2.5 1.6 2.8 1.7.3.1.5.1.7-.1.2-.2.7-.8.9-1.1.2-.3.4-.2.7-.1.3.1 1.7.8 2 .9.3.2.5.2.6.3.1.2.1.9-.1 1.6Z"/></svg>
+          Falar no WhatsApp
+        </a>
+        <a class="btn btn-outline btn-block" href={`mailto:${business.email}?subject=${mailSubject}`}>E-mail para a Nova Casa</a>
+        <a class="btn btn-outline btn-block" href={`tel:${business.phoneHref}`}>Ligar {business.phone}</a>
+        <div class="sidebar-agent">
+          <img src="/assets/img/carla-santos.webp" alt={business.agentName}>
+          <div><b>{business.agentName}</b><span>Corretora de Imóveis, Nova Casa</span></div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="related-strip">
+      <div class="section-head">
+        <span class="eyebrow">Mais da Nova Casa</span>
+        <h2>Outros imóveis que você pode gostar</h2>
+      </div>
+      <div class="property-grid">
+        {related.map((r) => (
+          <PropertyCard
+            slug={r.id}
+            href={`/pt-br/properties/${r.id}`}
+            title={r.data.title}
+            location={r.data.location}
+            price={r.data.price}
+            purpose={r.data.purpose}
+            beds={r.data.beds}
+            baths={r.data.baths}
+            size={r.data.size}
+            image={r.data.images[0]}
+            lang="pt-br"
+          />
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <Fragment slot="footer-tagline">Seu caminho, em português, para investir e viver no mercado imobiliário de Dubai.</Fragment>
+  <Fragment slot="footer-bottom-right"><span>Dubai, EAU</span></Fragment>
+</BaseLayout>

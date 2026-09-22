@@ -1,0 +1,51 @@
+{
+  "order": 4,
+  "title": "3 Quartos + Quarto de Empregada, Vista Skyline",
+  "subtitle": "Andar Alto | Sem Mobília | Múltiplas Varandas",
+  "community": "Dubai Silicon Oasis (DSO)",
+  "building": "Ayat Oasis",
+  "location": "Ayat Oasis, Dubai Silicon Oasis (DSO), Dubai",
+  "price": "AED 2.350.000",
+  "priceNote": "Ref. 109105-HVOhnb",
+  "type": "Apartamento",
+  "purpose": "Venda",
+  "beds": 3,
+  "baths": 4,
+  "size": "203,32 m² (2.188.41 pés²)",
+  "parking": "2 Cobertas",
+  "floor": "Andar Alto",
+  "furnishing": "Sem Mobília",
+  "videoUrl": "https://www.youtube.com/embed/4sInE-XGl6g",
+  "images": ["/assets/img/properties/ayat-oasis/01.webp","/assets/img/properties/ayat-oasis/02.webp","/assets/img/properties/ayat-oasis/03.webp","/assets/img/properties/ayat-oasis/04.webp","/assets/img/properties/ayat-oasis/05.webp","/assets/img/properties/ayat-oasis/06.webp","/assets/img/properties/ayat-oasis/07.webp","/assets/img/properties/ayat-oasis/08.webp","/assets/img/properties/ayat-oasis/09.webp","/assets/img/properties/ayat-oasis/10.webp","/assets/img/properties/ayat-oasis/11.webp","/assets/img/properties/ayat-oasis/12.webp","/assets/img/properties/ayat-oasis/13.webp","/assets/img/properties/ayat-oasis/14.webp","/assets/img/properties/ayat-oasis/15.webp","/assets/img/properties/ayat-oasis/16.webp","/assets/img/properties/ayat-oasis/17.webp","/assets/img/properties/ayat-oasis/18.webp","/assets/img/properties/ayat-oasis/19.webp","/assets/img/properties/ayat-oasis/20.webp","/assets/img/properties/ayat-oasis/21.webp","/assets/img/properties/ayat-oasis/22.webp","/assets/img/properties/ayat-oasis/23.webp","/assets/img/properties/ayat-oasis/24.webp"],
+  "description": [
+    "A Nova Casa Real Estate tem o orgulho de apresentar este espaçoso apartamento de 3 quartos mais quarto de empregada no Ayat Oasis, em Dubai Silicon Oasis.",
+    "Com impressionantes 203,32 m² de área, este apartamento em andar alto tem um layout bem distribuído, interiores claros e arejados, múltiplas varandas, e vista tranquila para o Cedre Villas e o skyline da região.",
+    "Pelo tamanho generoso, layout funcional e localização familiar, é uma excelente opção tanto para quem busca uma casa confortável quanto para investidores em busca de bom potencial de locação. O apartamento está atualmente sem mobília e a desocupação está prevista para junho."
+  ],
+  "features": [
+    "3 quartos + quarto de empregada",
+    "Layout amplo e espaçoso",
+    "Interiores claros e arejados",
+    "Múltiplas varandas",
+    "Vista skyline/comunidade",
+    "Lavanderia",
+    "2 vagas cobertas",
+    "Freehold, pronto"
+  ],
+  "amenities": [
+    "Piscina",
+    "Academia / Health Club",
+    "Playground infantil",
+    "Segurança 24h e CFTV",
+    "Elevadores de alta velocidade",
+    "Sala de oração",
+    "Centro médico de primeiros socorros",
+    "Concierge 24h"
+  ],
+  "nearby": [
+    "Aeroporto Internacional de Dubai — aprox. 15–20 min",
+    "Downtown Dubai — aprox. 20 min",
+    "Dubai Creek Harbour — aprox. 15 min",
+    "Academic City — aprox. 10 min"
+  ]
+}

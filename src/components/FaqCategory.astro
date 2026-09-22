@@ -1,0 +1,30 @@
+---
+import { renderLiteHtml } from "../lib/markdownLite";
+
+interface FaqItem {
+  question: string;
+  answer: string;
+  openByDefault?: boolean;
+}
+
+interface Props {
+  id: string;
+  pill: string;
+  heading: string;
+  items: FaqItem[];
+}
+
+const { id, pill, heading, items } = Astro.props;
+---
+<div class="faq-category" id={id}>
+  <span class="pill">{pill}</span>
+  <h3 style="margin-top:1rem">{heading}</h3>
+  <div class="faq-list">
+    {items.map((item) => (
+      <div class="faq-item" data-open={item.openByDefault ? "true" : "false"}>
+        <button class="faq-q" aria-expanded={item.openByDefault ? "true" : "false"}><span>{item.question}</span><span class="plus" aria-hidden="true"></span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p set:html={renderLiteHtml(item.answer)} /></div></div>
+      </div>
+    ))}
+  </div>
+</div>

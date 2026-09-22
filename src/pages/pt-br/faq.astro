@@ -1,0 +1,53 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import FaqCategory from "../../components/FaqCategory.astro";
+
+const faq = await getCollection("faq-pt");
+const byCategory = (id: string) => faq.filter((f) => f.data.category === id).sort((a, b) => a.data.order - b.data.order).map((f) => f.data);
+
+const categories = [
+  { id: "por-que-dubai", pill: "Por que Dubai", heading: "O que atrai tanta gente pra Dubai" },
+  { id: "comprando", pill: "Comprando", heading: "Como funciona comprar um imóvel, do Brasil" },
+  { id: "impostos-vistos", pill: "Impostos & Vistos", heading: "O que saber, em linhas gerais" },
+  { id: "investindo", pill: "Investindo com a Nova Casa", heading: "Por que falar com a gente" },
+];
+---
+<BaseLayout
+  lang="pt-br"
+  title="Guia para Brasileiros: Investir em Dubai | Nova Casa Real Estate"
+  description="Um guia simples para brasileiros curiosos sobre investir em imóveis em Dubai — por que a cidade atrai tanta gente, como funciona a compra, e como a Nova Casa pode ajudar."
+  ogPath="/pt-br/faq"
+  currentNav="faq"
+>
+  <div class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Guia para Brasileiros</span>
+      <h1>Dubai está mais perto do que você imagina.</h1>
+      <p class="lede">Cada vez mais brasileiros estão descobrindo Dubai como destino para investir e, em alguns casos, viver. Reunimos aqui as perguntas mais comuns de quem está começando a pesquisar — de forma simples, sem enrolação. Se quiser ir direto ao ponto, fale com a Carla.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      {categories.map((cat) => (
+        <FaqCategory id={cat.id} pill={cat.pill} heading={cat.heading} items={byCategory(cat.id)} />
+      ))}
+
+      <div class="text-center" style="max-width:640px;margin-top:4rem">
+        <h2>Curioso pra saber mais?</h2>
+        <p class="lede text-center">Não precisa ter todas as respostas antes de conversar. A Carla te ajuda a entender se faz sentido pra você — sem compromisso.</p>
+        <div class="hero-actions" style="justify-content:center">
+          <a class="btn btn-whatsapp" data-whatsapp="uma dúvida da página de Guia para Brasileiros">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.7 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.1.2-3.6-.8-3-1.2-4.9-4.2-5-4.4-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.2.1.3 0 .5-.1.2-.1.3-.3.5l-.4.5c-.1.2-.3.3-.1.6.2.3.9 1.5 2 2.4 1.4 1.2 2.5 1.6 2.8 1.7.3.1.5.1.7-.1.2-.2.7-.8.9-1.1.2-.3.4-.2.7-.1.3.1 1.7.8 2 .9.3.2.5.2.6.3.1.2.1.9-.1 1.6Z"/></svg>
+            Falar no WhatsApp
+          </a>
+          <a class="btn btn-outline" href="/pt-br#contact">Formulário de Contato</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Fragment slot="footer-tagline">Seu caminho, em português, para investir e viver no mercado imobiliário de Dubai.</Fragment>
+  <Fragment slot="footer-bottom-right"><span>Esta página traz informação geral, não é consultoria jurídica, tributária, de imigração ou financeira.</span></Fragment>
+</BaseLayout>

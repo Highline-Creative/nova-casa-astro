@@ -1,0 +1,139 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Gallery from "../../components/Gallery.astro";
+import PropertyCard from "../../components/PropertyCard.astro";
+import business from "../../content/business.json";
+
+export async function getStaticPaths() {
+  const properties = await getCollection("properties-en");
+  return properties.map((p) => ({ params: { slug: p.id }, props: { entry: p } }));
+}
+
+const { entry } = Astro.props;
+const p = entry.data;
+const allProperties = (await getCollection("properties-en")).sort((a, b) => a.data.order - b.data.order);
+const related = allProperties.filter((o) => o.id !== entry.id).slice(0, 3);
+
+const facts = [
+  { value: String(p.beds), label: "Bedroom" + (p.beds === 1 ? "" : "s") },
+  { value: String(p.baths), label: "Bathroom" + (p.baths === 1 ? "" : "s") },
+  { value: p.size, label: "Size" },
+  p.floor ? { value: p.floor, label: "Floor" } : null,
+  p.view ? { value: p.view, label: "View" } : null,
+  p.balcony ? { value: p.balcony, label: "Balcony" } : null,
+  { value: p.furnishing, label: "Furnishing" },
+  p.parking ? { value: p.parking, label: "Parking" } : null,
+  p.status ? { value: p.status, label: "Status" } : null,
+].filter((f): f is { value: string; label: string } => Boolean(f)).slice(0, 6);
+
+const whatsappContext = `the ${p.title} in ${p.community}${p.priceNote?.startsWith("Ref.") ? ` (${p.price}, ${p.priceNote})` : ` (${p.price})`}`;
+const mailSubject = encodeURIComponent(`Enquiry — ${p.title}`);
+---
+<BaseLayout
+  lang="en"
+  title={`${p.title} | Nova Casa Real Estate`}
+  description={`${p.title} in ${p.community}, Dubai. ${p.price}. Presented by Nova Casa Real Estate.`}
+  ogPath={`/properties/${entry.id}`}
+  currentNav="properties"
+>
+  <div class="container">
+    <p class="breadcrumb"><a href="/">Home</a> / <a href="/#properties">Properties</a> / {p.community}</p>
+
+    <div class="pd-head">
+      <div class="pd-title-wrap">
+        <span class="eyebrow">{p.type} · {p.purpose}</span>
+        <h1>{p.title}</h1>
+        <p class="pd-loc">{p.location}</p>
+      </div>
+      <div class="pd-price">{p.price}{p.priceNote && <span>{p.priceNote}</span>}</div>
+    </div>
+
+    <Gallery images={p.images} title={p.title} lang="en" />
+
+    {p.videoUrl && (
+      <div class="video-tour">
+        <h3>Video Tour</h3>
+        <div class="video-embed">
+          <iframe src={p.videoUrl} title={`Video tour — ${p.title}`} loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    )}
+
+    <div class="pd-layout">
+      <div>
+        <div class="fact-grid">
+          {facts.map((f) => (
+            <div class="fact"><b>{f.value}</b><span>{f.label}</span></div>
+          ))}
+        </div>
+
+        <h2>About this property</h2>
+        {p.description.map((para) => <p>{para}</p>)}
+
+        <h3>Key features</h3>
+        <ul class="check-list">
+          {p.features.map((f) => <li>{f}</li>)}
+        </ul>
+
+        {p.amenities.length > 0 && (
+          <Fragment>
+            <h3>Building &amp; community features</h3>
+            <ul class="check-list">
+              {p.amenities.map((a) => <li>{a}</li>)}
+            </ul>
+          </Fragment>
+        )}
+
+        {p.nearby && p.nearby.length > 0 && (
+          <Fragment>
+            <h3>Location &amp; nearby destinations</h3>
+            <ul class="check-list">
+              {p.nearby.map((n) => <li>{n}</li>)}
+            </ul>
+          </Fragment>
+        )}
+      </div>
+
+      <aside class="sidebar-card">
+        <h3>Arrange a viewing</h3>
+        <a class="btn btn-whatsapp btn-block" data-whatsapp={whatsappContext}>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.7 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.1.2-3.6-.8-3-1.2-4.9-4.2-5-4.4-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.2.1.3 0 .5-.1.2-.1.3-.3.5l-.4.5c-.1.2-.3.3-.1.6.2.3.9 1.5 2 2.4 1.4 1.2 2.5 1.6 2.8 1.7.3.1.5.1.7-.1.2-.2.7-.8.9-1.1.2-.3.4-.2.7-.1.3.1 1.7.8 2 .9.3.2.5.2.6.3.1.2.1.9-.1 1.6Z"/></svg>
+          Enquire on WhatsApp
+        </a>
+        <a class="btn btn-outline btn-block" href={`mailto:${business.email}?subject=${mailSubject}`}>Email Nova Casa</a>
+        <a class="btn btn-outline btn-block" href={`tel:${business.phoneHref}`}>Call {business.phone}</a>
+        <div class="sidebar-agent">
+          <img src="/assets/img/carla-santos.webp" alt={business.agentName}>
+          <div><b>{business.agentName}</b><span>Real Estate Agent, Nova Casa</span></div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="related-strip">
+      <div class="section-head">
+        <span class="eyebrow">More from Nova Casa</span>
+        <h2>Other properties you may like</h2>
+      </div>
+      <div class="property-grid">
+        {related.map((r) => (
+          <PropertyCard
+            slug={r.id}
+            href={`/properties/${r.id}`}
+            title={r.data.title}
+            location={r.data.location}
+            price={r.data.price}
+            purpose={r.data.purpose}
+            beds={r.data.beds}
+            baths={r.data.baths}
+            size={r.data.size}
+            image={r.data.images[0]}
+            lang="en"
+          />
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <Fragment slot="footer-tagline">A more personalised path into Dubai's residential and commercial property market.</Fragment>
+</BaseLayout>

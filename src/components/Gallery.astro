@@ -1,0 +1,21 @@
+---
+interface Props {
+  images: string[];
+  title: string;
+  lang: "en" | "pt-br";
+}
+const { images, title, lang } = Astro.props;
+const isPt = lang === "pt-br";
+---
+{images.length > 0 && (
+  <Fragment>
+    <img id="gallery-main-img" class="gallery-main" src={images[0]} data-index="0" alt={`${title} — ${isPt ? "foto principal" : "main photo"}`}>
+    <div class="gallery-thumbs" id="gallery-thumbs">
+      {images.map((src, i) => (
+        <button type="button" data-index={i} aria-current={i === 0 ? "true" : "false"} aria-label={`${isPt ? "Foto" : "Photo"} ${i + 1}`}>
+          <img src={src} alt={`${title} — ${isPt ? "foto" : "photo"} ${i + 1}`} loading="lazy" width="200" height="150">
+        </button>
+      ))}
+    </div>
+  </Fragment>
+)}

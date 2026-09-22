@@ -1,0 +1,51 @@
+{
+  "order": 4,
+  "title": "3-Bedroom + Maid's Room, Skyline View",
+  "subtitle": "Higher Floor | Unfurnished | Multiple Balconies",
+  "community": "Dubai Silicon Oasis (DSO)",
+  "building": "Ayat Oasis",
+  "location": "Ayat Oasis, Dubai Silicon Oasis (DSO), Dubai",
+  "price": "AED 2,350,000",
+  "priceNote": "Ref. 109105-HVOhnb",
+  "type": "Apartment",
+  "purpose": "For Sale",
+  "beds": 3,
+  "baths": 4,
+  "size": "2,188.41 sq. ft. (203.32 m²)",
+  "parking": "2 Covered",
+  "floor": "Higher Floor",
+  "furnishing": "Unfurnished",
+  "videoUrl": "https://www.youtube.com/embed/4sInE-XGl6g",
+  "images": ["/assets/img/properties/ayat-oasis/01.webp","/assets/img/properties/ayat-oasis/02.webp","/assets/img/properties/ayat-oasis/03.webp","/assets/img/properties/ayat-oasis/04.webp","/assets/img/properties/ayat-oasis/05.webp","/assets/img/properties/ayat-oasis/06.webp","/assets/img/properties/ayat-oasis/07.webp","/assets/img/properties/ayat-oasis/08.webp","/assets/img/properties/ayat-oasis/09.webp","/assets/img/properties/ayat-oasis/10.webp","/assets/img/properties/ayat-oasis/11.webp","/assets/img/properties/ayat-oasis/12.webp","/assets/img/properties/ayat-oasis/13.webp","/assets/img/properties/ayat-oasis/14.webp","/assets/img/properties/ayat-oasis/15.webp","/assets/img/properties/ayat-oasis/16.webp","/assets/img/properties/ayat-oasis/17.webp","/assets/img/properties/ayat-oasis/18.webp","/assets/img/properties/ayat-oasis/19.webp","/assets/img/properties/ayat-oasis/20.webp","/assets/img/properties/ayat-oasis/21.webp","/assets/img/properties/ayat-oasis/22.webp","/assets/img/properties/ayat-oasis/23.webp","/assets/img/properties/ayat-oasis/24.webp"],
+  "description": [
+    "Nova Casa Real Estate is proud to present this spacious 3-bedroom apartment plus maid's room in Ayat Oasis, located in Dubai Silicon Oasis.",
+    "Offering an impressive 2,188.41 sq. ft. of living space, this higher-floor apartment features a well-designed layout with bright and airy interiors and multiple balconies, enjoying peaceful views over Cedre Villas and the surrounding community skyline.",
+    "With its generous size, functional layout and family-friendly location, this property is an excellent option for end users looking for a comfortable family home as well as investors seeking strong rental potential. The apartment is currently unfurnished and is scheduled to be vacant in June."
+  ],
+  "features": [
+    "3 bedrooms + maid's room",
+    "Huge / spacious layout",
+    "Bright and airy interiors",
+    "Multiple balconies",
+    "Skyline / community views",
+    "Laundry room",
+    "2 covered parking spaces",
+    "Freehold, ready property"
+  ],
+  "amenities": [
+    "Swimming pool",
+    "Gym / Health Club",
+    "Children's play area",
+    "24-hour security & CCTV",
+    "High-speed elevators",
+    "Prayer room",
+    "First aid medical centre",
+    "24-hour concierge"
+  ],
+  "nearby": [
+    "Dubai International Airport — approx. 15–20 min",
+    "Downtown Dubai — approx. 20 min",
+    "Dubai Creek Harbour — approx. 15 min",
+    "Academic City — approx. 10 min"
+  ]
+}

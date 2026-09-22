@@ -1,0 +1,49 @@
+{
+  "order": 5,
+  "title": "3-Bedroom + Maid's Room, For Rent",
+  "subtitle": "Higher Floor | Unfurnished | Multiple Balconies",
+  "community": "Dubai Silicon Oasis (DSO)",
+  "building": "Ayat Oasis",
+  "location": "Ayat Oasis, Dubai Silicon Oasis (DSO), Dubai",
+  "price": "AED 125,000",
+  "priceNote": "Per Year · Ref. 109105-XQhg4S",
+  "type": "Apartment",
+  "purpose": "For Rent",
+  "beds": 3,
+  "baths": 4,
+  "size": "2,188.41 sq. ft. (203.32 m²)",
+  "parking": "2 Covered",
+  "floor": "Higher Floor",
+  "furnishing": "Unfurnished",
+  "images": ["/assets/img/properties/ayat-oasis-rent/01.webp","/assets/img/properties/ayat-oasis-rent/02.webp","/assets/img/properties/ayat-oasis-rent/03.webp","/assets/img/properties/ayat-oasis-rent/04.webp","/assets/img/properties/ayat-oasis-rent/05.webp","/assets/img/properties/ayat-oasis-rent/06.webp","/assets/img/properties/ayat-oasis-rent/07.webp","/assets/img/properties/ayat-oasis-rent/08.webp","/assets/img/properties/ayat-oasis-rent/09.webp","/assets/img/properties/ayat-oasis-rent/10.webp","/assets/img/properties/ayat-oasis-rent/11.webp","/assets/img/properties/ayat-oasis-rent/12.webp","/assets/img/properties/ayat-oasis-rent/13.webp","/assets/img/properties/ayat-oasis-rent/14.webp","/assets/img/properties/ayat-oasis-rent/15.webp","/assets/img/properties/ayat-oasis-rent/16.webp","/assets/img/properties/ayat-oasis-rent/17.webp","/assets/img/properties/ayat-oasis-rent/18.webp","/assets/img/properties/ayat-oasis-rent/19.webp","/assets/img/properties/ayat-oasis-rent/20.webp","/assets/img/properties/ayat-oasis-rent/21.webp","/assets/img/properties/ayat-oasis-rent/22.webp","/assets/img/properties/ayat-oasis-rent/23.webp","/assets/img/properties/ayat-oasis-rent/24.webp","/assets/img/properties/ayat-oasis-rent/25.webp","/assets/img/properties/ayat-oasis-rent/26.webp","/assets/img/properties/ayat-oasis-rent/27.webp","/assets/img/properties/ayat-oasis-rent/28.webp","/assets/img/properties/ayat-oasis-rent/29.webp","/assets/img/properties/ayat-oasis-rent/30.webp","/assets/img/properties/ayat-oasis-rent/31.webp","/assets/img/properties/ayat-oasis-rent/32.webp","/assets/img/properties/ayat-oasis-rent/33.webp","/assets/img/properties/ayat-oasis-rent/34.webp","/assets/img/properties/ayat-oasis-rent/35.webp"],
+  "description": [
+    "Nova Casa Real Estate is proud to present this spacious 3-bedroom apartment plus Maid's Room in Ayat Oasis, located in Dubai Silicon Oasis.",
+    "The property offers a huge and well-designed layout with 2,188.41 sq. ft. of living space, bright and airy interiors, and multiple balconies overlooking Cedre Villas and the surrounding community skyline.",
+    "The apartment features three bedrooms plus a maid's room, four bathrooms, a laundry room and two covered parking spaces — an excellent opportunity for families looking for a large and comfortable home in an established Dubai community."
+  ],
+  "features": [
+    "3 bedrooms + maid's room",
+    "Huge / spacious layout",
+    "Bright and airy interiors",
+    "Multiple balconies",
+    "Community / skyline views",
+    "Laundry room",
+    "2 covered parking spaces",
+    "Central air conditioning"
+  ],
+  "amenities": [
+    "Swimming pool",
+    "Gym / Health Club",
+    "Children's play area",
+    "24-hour security",
+    "High-speed elevators",
+    "Well-maintained lobby",
+    "Facilities for disabled"
+  ],
+  "nearby": [
+    "Dubai International Airport — approx. 15–20 min",
+    "Downtown Dubai — approx. 20 min",
+    "Dubai Creek Harbour — approx. 15 min",
+    "Academic City — approx. 10 min"
+  ]
+}

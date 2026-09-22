@@ -1,0 +1,41 @@
+{
+  "order": 8,
+  "title": "Renovated 2-Bedroom, Park Facing",
+  "subtitle": "Renovated | Park Facing | Vacant on Transfer",
+  "community": "Uptown Motor City",
+  "building": "Norton Court 1",
+  "location": "Norton Court 1, Uptown Motor City, Dubai",
+  "price": "AED 1,820,000",
+  "priceNote": "Approx. AED 1,265/sq. ft.",
+  "type": "Apartment",
+  "purpose": "For Sale",
+  "beds": 2,
+  "baths": 3,
+  "size": "1,439 sq. ft. (133.69 m²)",
+  "view": "Park Facing",
+  "furnishing": "Renovated",
+  "status": "Vacant on Transfer",
+  "videoUrl": "https://www.youtube.com/embed/jj34rpZ_LWQ",
+  "images": ["/assets/img/properties/norton-court/01.webp","/assets/img/properties/norton-court/02.webp","/assets/img/properties/norton-court/03.webp","/assets/img/properties/norton-court/04.webp","/assets/img/properties/norton-court/05.webp","/assets/img/properties/norton-court/06.webp","/assets/img/properties/norton-court/07.webp","/assets/img/properties/norton-court/08.webp","/assets/img/properties/norton-court/09.webp","/assets/img/properties/norton-court/10.webp","/assets/img/properties/norton-court/11.webp","/assets/img/properties/norton-court/12.webp","/assets/img/properties/norton-court/13.webp","/assets/img/properties/norton-court/14.webp","/assets/img/properties/norton-court/15.webp","/assets/img/properties/norton-court/16.webp","/assets/img/properties/norton-court/17.webp","/assets/img/properties/norton-court/18.webp","/assets/img/properties/norton-court/19.webp","/assets/img/properties/norton-court/20.webp","/assets/img/properties/norton-court/21.webp","/assets/img/properties/norton-court/22.webp","/assets/img/properties/norton-court/23.webp","/assets/img/properties/norton-court/24.webp","/assets/img/properties/norton-court/25.webp","/assets/img/properties/norton-court/26.webp","/assets/img/properties/norton-court/27.webp","/assets/img/properties/norton-court/28.webp"],
+  "description": [
+    "Nova Casa Real Estate presents this beautifully renovated 2-bedroom apartment in Norton Court 1, located within the popular Uptown Motor City community.",
+    "Offering approximately 1,439 sq. ft. of living space, the property features a spacious layout and a desirable park-facing position. The apartment has been renovated and will be vacant upon transfer, making it an attractive option for both end users looking for a ready home and investors seeking a well-located property with strong rental potential.",
+    "Uptown Motor City is a family-friendly community known for its green surroundings, landscaped areas, parks, walking paths and convenient access to major roads and everyday amenities."
+  ],
+  "features": [
+    "Renovated throughout",
+    "Park-facing position",
+    "Vacant on transfer",
+    "Spacious layout",
+    "Family-friendly community",
+    "Excellent investment opportunity"
+  ],
+  "amenities": [
+    "Landscaped areas & green spaces",
+    "Parks & walking areas",
+    "Restaurants and cafés nearby",
+    "Retail and everyday amenities",
+    "Easy access to major roads"
+  ],
+  "nearby": []
+}

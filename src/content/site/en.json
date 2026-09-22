@@ -1,0 +1,43 @@
+{
+  "heroEyebrow": "Nova Casa Real Estate · Dubai, UAE",
+  "heroTitle": "A more personal path into Dubai real estate.",
+  "heroLede": "We connect international investors and residents with exceptional residential and commercial opportunities across Dubai — guided by transparency, local expertise and a genuinely personalised service.",
+  "heroImage": "/assets/img/properties/al-furjan-villa/04.jpg",
+  "heroImageAlt": "Elegant double-height entryway with glass staircase in a luxury Nova Casa villa, Al Furjan West, Dubai",
+  "statListings": "8",
+  "statPriceRange": "AED 800K–12.5M",
+  "trustItems": [
+    "RERA Registered — License No. 49747",
+    "Founder-Led, Personalised Service",
+    "International Investors & Residents",
+    "Freehold Properties"
+  ],
+  "propertiesEyebrow": "Portfolio",
+  "propertiesTitle": "Featured properties in Dubai",
+  "propertiesLede": "A curated selection of freehold apartments and villas currently represented by Nova Casa Real Estate.",
+  "agentRole": "Real Estate Agent, Nova Casa Real Estate",
+  "agentBio": "Carla has called Dubai home since 2018 and has worked in the city's real estate market since 2022. She works directly with every Nova Casa client — from first enquiry to key handover — to make each transaction clear, informed and personal.",
+  "aboutEyebrow": "About Nova Casa",
+  "aboutTitle": "Global perspective, local market knowledge.",
+  "aboutParagraphs": [
+    "Nova Casa Real Estate is a dynamic real estate company based in Dubai, founded by a Brazilian entrepreneur with a vision to connect international investors and residents with exceptional property opportunities in one of the world's most vibrant cities.",
+    "Combining global perspective with local market knowledge, Nova Casa Real Estate specialises in helping clients buy, sell and invest in premium residential and commercial properties across Dubai. The company is committed to transparency, personalised service and building long-term relationships with clients from around the world.",
+    "With a strong focus on trust, professionalism and innovation, Nova Casa Real Estate aims to make the property journey seamless — whether clients are looking for their dream home, a profitable investment, or strategic real estate guidance in Dubai's rapidly growing market."
+  ],
+  "servicesEyebrow": "Services",
+  "servicesTitle": "How Nova Casa can help",
+  "servicesLede": "Whichever stage of the Dubai property journey you're at, Nova Casa provides guidance tailored to your goals.",
+  "services": [
+    { "title": "Buying", "text": "Access to curated freehold apartments and villas, with guidance through viewings, negotiation and the DLD transfer process." },
+    { "title": "Selling", "text": "Strategic pricing, professional presentation and access to a network of qualified local and international buyers." },
+    { "title": "Renting", "text": "Support for landlords and tenants alike, from listing and screening to Ejari registration and lease management." },
+    { "title": "Investment Advisory", "text": "Market insight for international investors evaluating rental yield, capital growth and residency-linked property options." }
+  ],
+  "faqTeaserEyebrow": "Dubai Real Estate Guide",
+  "faqTeaserTitle": "Questions about buying or renting in Dubai?",
+  "faqTeaserLede": "We put together a full guide covering DLD fees, freehold ownership, Ejari, mortgages for non-residents and more.",
+  "contactEyebrow": "Contact",
+  "contactTitle": "Let's talk about your next move in Dubai.",
+  "contactLede": "Tell us what you're looking for and Carla will get back to you personally.",
+  "footerTagline": "A more personalised path into Dubai's residential and commercial property market."
+}

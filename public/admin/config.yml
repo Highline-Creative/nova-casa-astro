@@ -1,0 +1,195 @@
+backend:
+  name: test-repo
+
+media_folder: "public/assets/img/properties"
+public_folder: "/assets/img/properties"
+
+collections:
+  - name: "properties-en"
+    label: "Imóveis (EN)"
+    folder: "src/content/properties/en"
+    create: true
+    delete: true
+    identifier_field: title
+    fields:
+      - { label: "Ordem de exibição", name: "order", widget: "number", default: 99 }
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Subtítulo", name: "subtitle", widget: "string" }
+      - { label: "Comunidade", name: "community", widget: "string" }
+      - { label: "Empreendimento", name: "building", widget: "string", required: false }
+      - { label: "Localização", name: "location", widget: "string" }
+      - { label: "Preço", name: "price", widget: "string" }
+      - { label: "Nota do preço (ex: Ref., Freehold)", name: "priceNote", widget: "string", required: false }
+      - { label: "Tipo", name: "type", widget: "string" }
+      - { label: "Finalidade (For Sale / For Rent)", name: "purpose", widget: "string" }
+      - { label: "Quartos", name: "beds", widget: "number" }
+      - { label: "Banheiros", name: "baths", widget: "number" }
+      - { label: "Área", name: "size", widget: "string" }
+      - { label: "Vagas", name: "parking", widget: "string", required: false }
+      - { label: "Andar", name: "floor", widget: "string", required: false }
+      - { label: "Vista", name: "view", widget: "string", required: false }
+      - { label: "Varanda", name: "balcony", widget: "string", required: false }
+      - { label: "Mobília", name: "furnishing", widget: "string" }
+      - { label: "Status", name: "status", widget: "string", required: false }
+      - { label: "Vídeo (URL de embed do YouTube)", name: "videoUrl", widget: "string", required: false }
+      - { label: "Fotos", name: "images", widget: "list", field: { label: "Foto", name: "image", widget: "image" } }
+      - { label: "Descrição (parágrafos)", name: "description", widget: "list", field: { label: "Parágrafo", name: "paragraph", widget: "text" } }
+      - { label: "Características", name: "features", widget: "list", field: { label: "Item", name: "item", widget: "string" } }
+      - { label: "Comodidades", name: "amenities", widget: "list", field: { label: "Item", name: "item", widget: "string" } }
+      - { label: "Pontos próximos", name: "nearby", widget: "list", required: false, field: { label: "Item", name: "item", widget: "string" } }
+
+  - name: "properties-pt"
+    label: "Imóveis (PT-BR)"
+    folder: "src/content/properties/pt-br"
+    create: true
+    delete: true
+    identifier_field: title
+    fields:
+      - { label: "Ordem de exibição", name: "order", widget: "number", default: 99 }
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Subtítulo", name: "subtitle", widget: "string" }
+      - { label: "Comunidade", name: "community", widget: "string" }
+      - { label: "Empreendimento", name: "building", widget: "string", required: false }
+      - { label: "Localização", name: "location", widget: "string" }
+      - { label: "Preço", name: "price", widget: "string" }
+      - { label: "Nota do preço (ex: Ref., Freehold)", name: "priceNote", widget: "string", required: false }
+      - { label: "Tipo", name: "type", widget: "string" }
+      - { label: "Finalidade (Venda / Aluguel)", name: "purpose", widget: "string" }
+      - { label: "Quartos", name: "beds", widget: "number" }
+      - { label: "Banheiros", name: "baths", widget: "number" }
+      - { label: "Área", name: "size", widget: "string" }
+      - { label: "Vagas", name: "parking", widget: "string", required: false }
+      - { label: "Andar", name: "floor", widget: "string", required: false }
+      - { label: "Vista", name: "view", widget: "string", required: false }
+      - { label: "Varanda", name: "balcony", widget: "string", required: false }
+      - { label: "Mobília", name: "furnishing", widget: "string" }
+      - { label: "Status", name: "status", widget: "string", required: false }
+      - { label: "Vídeo (URL de embed do YouTube)", name: "videoUrl", widget: "string", required: false }
+      - { label: "Fotos", name: "images", widget: "list", field: { label: "Foto", name: "image", widget: "image" } }
+      - { label: "Descrição (parágrafos)", name: "description", widget: "list", field: { label: "Parágrafo", name: "paragraph", widget: "text" } }
+      - { label: "Características", name: "features", widget: "list", field: { label: "Item", name: "item", widget: "string" } }
+      - { label: "Comodidades", name: "amenities", widget: "list", field: { label: "Item", name: "item", widget: "string" } }
+      - { label: "Pontos próximos", name: "nearby", widget: "list", required: false, field: { label: "Item", name: "item", widget: "string" } }
+
+  - name: "faq-en"
+    label: "FAQ (EN)"
+    folder: "src/content/faq/en"
+    create: true
+    delete: true
+    identifier_field: question
+    fields:
+      - label: "Categoria"
+        name: "category"
+        widget: "select"
+        options: ["buying", "fees", "renting", "legal", "investing"]
+      - { label: "Ordem dentro da categoria", name: "order", widget: "number" }
+      - { label: "Pergunta", name: "question", widget: "string" }
+      - { label: "Resposta", name: "answer", widget: "text" }
+      - { label: "Aberta por padrão?", name: "openByDefault", widget: "boolean", required: false, default: false }
+
+  - name: "faq-pt"
+    label: "FAQ (PT-BR)"
+    folder: "src/content/faq/pt-br"
+    create: true
+    delete: true
+    identifier_field: question
+    fields:
+      - label: "Categoria"
+        name: "category"
+        widget: "select"
+        options: ["por-que-dubai", "comprando", "impostos-vistos", "investindo"]
+      - { label: "Ordem dentro da categoria", name: "order", widget: "number" }
+      - { label: "Pergunta", name: "question", widget: "string" }
+      - { label: "Resposta", name: "answer", widget: "text" }
+      - { label: "Aberta por padrão?", name: "openByDefault", widget: "boolean", required: false, default: false }
+
+  - name: "geral"
+    label: "Textos e Dados Gerais"
+    files:
+      - file: "src/content/business.json"
+        label: "Dados da Empresa"
+        name: "business"
+        fields:
+          - { label: "Telefone (exibição)", name: "phone", widget: "string" }
+          - { label: "Telefone (link tel:)", name: "phoneHref", widget: "string" }
+          - { label: "WhatsApp (só números, com código do país)", name: "whatsappNumber", widget: "string" }
+          - { label: "E-mail", name: "email", widget: "string" }
+          - { label: "Nº RERA", name: "rera", widget: "string" }
+          - { label: "URL do YouTube", name: "youtubeUrl", widget: "string" }
+          - { label: "URL do Bayut", name: "bayutUrl", widget: "string" }
+          - { label: "URL de verificação DLD", name: "dldVerifyUrl", widget: "string" }
+          - { label: "Nome da corretora", name: "agentName", widget: "string" }
+
+      - file: "src/content/site/en.json"
+        label: "Textos do Site — Inglês"
+        name: "siteEn"
+        fields:
+          - { label: "Hero — texto pequeno", name: "heroEyebrow", widget: "string" }
+          - { label: "Hero — título", name: "heroTitle", widget: "string" }
+          - { label: "Hero — parágrafo", name: "heroLede", widget: "text" }
+          - { label: "Hero — imagem de fundo", name: "heroImage", widget: "image" }
+          - { label: "Hero — texto alternativo da imagem", name: "heroImageAlt", widget: "string" }
+          - { label: "Estatística — nº de imóveis", name: "statListings", widget: "string" }
+          - { label: "Estatística — faixa de preço", name: "statPriceRange", widget: "string" }
+          - { label: "Selos de confiança", name: "trustItems", widget: "list", field: { label: "Selo", name: "item", widget: "string" } }
+          - { label: "Imóveis — texto pequeno", name: "propertiesEyebrow", widget: "string" }
+          - { label: "Imóveis — título", name: "propertiesTitle", widget: "string" }
+          - { label: "Imóveis — parágrafo", name: "propertiesLede", widget: "text" }
+          - { label: "Cargo da corretora", name: "agentRole", widget: "string" }
+          - { label: "Bio da corretora", name: "agentBio", widget: "text" }
+          - { label: "Sobre — texto pequeno", name: "aboutEyebrow", widget: "string" }
+          - { label: "Sobre — título", name: "aboutTitle", widget: "string" }
+          - { label: "Sobre — parágrafos", name: "aboutParagraphs", widget: "list", field: { label: "Parágrafo", name: "paragraph", widget: "text" } }
+          - { label: "Serviços — texto pequeno", name: "servicesEyebrow", widget: "string" }
+          - { label: "Serviços — título", name: "servicesTitle", widget: "string" }
+          - { label: "Serviços — parágrafo", name: "servicesLede", widget: "text" }
+          - label: "Serviços — itens"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Texto", name: "text", widget: "text" }
+          - { label: "FAQ teaser — texto pequeno", name: "faqTeaserEyebrow", widget: "string" }
+          - { label: "FAQ teaser — título", name: "faqTeaserTitle", widget: "string" }
+          - { label: "FAQ teaser — parágrafo", name: "faqTeaserLede", widget: "text" }
+          - { label: "Contato — texto pequeno", name: "contactEyebrow", widget: "string" }
+          - { label: "Contato — título", name: "contactTitle", widget: "string" }
+          - { label: "Contato — parágrafo", name: "contactLede", widget: "text" }
+          - { label: "Rodapé — frase da marca", name: "footerTagline", widget: "text" }
+
+      - file: "src/content/site/pt-br.json"
+        label: "Textos do Site — Português"
+        name: "sitePt"
+        fields:
+          - { label: "Hero — texto pequeno", name: "heroEyebrow", widget: "string" }
+          - { label: "Hero — título", name: "heroTitle", widget: "string" }
+          - { label: "Hero — parágrafo", name: "heroLede", widget: "text" }
+          - { label: "Hero — imagem de fundo", name: "heroImage", widget: "image" }
+          - { label: "Hero — texto alternativo da imagem", name: "heroImageAlt", widget: "string" }
+          - { label: "Estatística — nº de imóveis", name: "statListings", widget: "string" }
+          - { label: "Estatística — faixa de preço", name: "statPriceRange", widget: "string" }
+          - { label: "Selos de confiança", name: "trustItems", widget: "list", field: { label: "Selo", name: "item", widget: "string" } }
+          - { label: "Imóveis — texto pequeno", name: "propertiesEyebrow", widget: "string" }
+          - { label: "Imóveis — título", name: "propertiesTitle", widget: "string" }
+          - { label: "Imóveis — parágrafo", name: "propertiesLede", widget: "text" }
+          - { label: "Cargo da corretora", name: "agentRole", widget: "string" }
+          - { label: "Bio da corretora", name: "agentBio", widget: "text" }
+          - { label: "Sobre — texto pequeno", name: "aboutEyebrow", widget: "string" }
+          - { label: "Sobre — título", name: "aboutTitle", widget: "string" }
+          - { label: "Sobre — parágrafos", name: "aboutParagraphs", widget: "list", field: { label: "Parágrafo", name: "paragraph", widget: "text" } }
+          - { label: "Serviços — texto pequeno", name: "servicesEyebrow", widget: "string" }
+          - { label: "Serviços — título", name: "servicesTitle", widget: "string" }
+          - { label: "Serviços — parágrafo", name: "servicesLede", widget: "text" }
+          - label: "Serviços — itens"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Texto", name: "text", widget: "text" }
+          - { label: "FAQ teaser — texto pequeno", name: "faqTeaserEyebrow", widget: "string" }
+          - { label: "FAQ teaser — título", name: "faqTeaserTitle", widget: "string" }
+          - { label: "FAQ teaser — parágrafo", name: "faqTeaserLede", widget: "text" }
+          - { label: "Contato — texto pequeno", name: "contactEyebrow", widget: "string" }
+          - { label: "Contato — título", name: "contactTitle", widget: "string" }
+          - { label: "Contato — parágrafo", name: "contactLede", widget: "text" }
+          - { label: "Rodapé — frase da marca", name: "footerTagline", widget: "text" }

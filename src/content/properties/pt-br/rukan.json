@@ -1,0 +1,46 @@
+{
+  "order": 2,
+  "title": "1 Quarto Semimobiliado",
+  "subtitle": "Semimobiliado | Layout Espaçoso",
+  "community": "Rukan",
+  "building": "Rukan Residence",
+  "location": "Rukan Residence, Rukan, Dubai",
+  "price": "AED 800.000",
+  "priceNote": "Ref. 109105-10MqSj",
+  "type": "Apartamento de 1 Quarto",
+  "purpose": "Venda",
+  "beds": 1,
+  "baths": 2,
+  "size": "48,09 m² (517.64 pés²)",
+  "parking": "Coberta",
+  "furnishing": "Semimobiliado",
+  "status": "Pronto para Morar",
+  "videoUrl": "https://www.youtube.com/embed/6szccI6WCaE",
+  "images": ["/assets/img/properties/rukan/01.jpg","/assets/img/properties/rukan/02.jpg","/assets/img/properties/rukan/03.jpg","/assets/img/properties/rukan/04.jpg","/assets/img/properties/rukan/05.jpg","/assets/img/properties/rukan/06.jpg","/assets/img/properties/rukan/07.jpg","/assets/img/properties/rukan/08.jpg","/assets/img/properties/rukan/09.jpg","/assets/img/properties/rukan/10.jpg","/assets/img/properties/rukan/11.jpg","/assets/img/properties/rukan/12.jpg","/assets/img/properties/rukan/13.jpg","/assets/img/properties/rukan/14.jpg","/assets/img/properties/rukan/15.jpg","/assets/img/properties/rukan/16.jpg","/assets/img/properties/rukan/17.jpg","/assets/img/properties/rukan/18.jpg","/assets/img/properties/rukan/19.jpg","/assets/img/properties/rukan/20.jpg","/assets/img/properties/rukan/21.jpg","/assets/img/properties/rukan/22.webp","/assets/img/properties/rukan/23.jpg","/assets/img/properties/rukan/24.jpg","/assets/img/properties/rukan/25.jpg","/assets/img/properties/rukan/26.jpg","/assets/img/properties/rukan/27.jpg","/assets/img/properties/rukan/28.webp","/assets/img/properties/rukan/29.webp","/assets/img/properties/rukan/30.webp","/assets/img/properties/rukan/31.webp","/assets/img/properties/rukan/32.webp","/assets/img/properties/rukan/33.webp","/assets/img/properties/rukan/34.webp","/assets/img/properties/rukan/35.webp","/assets/img/properties/rukan/36.webp","/assets/img/properties/rukan/37.webp","/assets/img/properties/rukan/38.webp","/assets/img/properties/rukan/39.webp","/assets/img/properties/rukan/40.webp","/assets/img/properties/rukan/41.webp","/assets/img/properties/rukan/42.webp","/assets/img/properties/rukan/43.webp","/assets/img/properties/rukan/44.webp","/assets/img/properties/rukan/45.webp","/assets/img/properties/rukan/46.webp","/assets/img/properties/rukan/47.webp","/assets/img/properties/rukan/48.webp","/assets/img/properties/rukan/49.webp","/assets/img/properties/rukan/50.webp","/assets/img/properties/rukan/51.webp","/assets/img/properties/rukan/52.webp","/assets/img/properties/rukan/53.webp"],
+  "description": [
+    "A Nova Casa Real Estate tem o prazer de apresentar este charmoso apartamento de 1 quarto à venda no Rukan Residence, Dubai.",
+    "Localizado na vibrante comunidade Rukan, o apartamento oferece um estilo de vida tranquilo, com fácil acesso a vias principais, comércio e lazer — ideal para profissionais e casais.",
+    "O imóvel está pronto para morar, com um layout prático e espaçoso, acabamentos modernos e comodidades convenientes."
+  ],
+  "features": [
+    "Pronto para morar",
+    "Semimobiliado",
+    "Sala de estar e jantar integrada",
+    "Cozinha moderna",
+    "Armários embutidos",
+    "Varanda",
+    "Vaga coberta",
+    "48,09 m² de área prática"
+  ],
+  "amenities": [
+    "Piscina",
+    "Academia completa",
+    "Áreas paisagísticas e parques verdes",
+    "Segurança 24h",
+    "Trilhas para caminhada e ciclismo",
+    "Comunidade pet-friendly",
+    "Comércio, cafés e restaurantes nas proximidades",
+    "Perto de escolas e unidades de saúde"
+  ],
+  "nearby": []
+}

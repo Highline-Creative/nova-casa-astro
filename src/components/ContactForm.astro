@@ -1,0 +1,79 @@
+---
+import business from "../content/business.json";
+
+interface Props {
+  lang: "en" | "pt-br";
+  propertyTitles: string[];
+}
+const { lang, propertyTitles } = Astro.props;
+const isPt = lang === "pt-br";
+
+const t = isPt
+  ? {
+      name: "Nome completo",
+      email: "E-mail",
+      phone: "Telefone / WhatsApp",
+      interest: "Tenho interesse em",
+      message: "Mensagem",
+      submit: "Enviar Mensagem",
+      note: "Prefere WhatsApp? Use o botão no canto da página.",
+      botLabel: "Deixe este campo vazio:",
+      general: "Interesse geral",
+      selling: "Quero vender meu imóvel",
+      renting: "Aluguel / Consultoria de investimento",
+      moving: "Quero me mudar para Dubai",
+    }
+  : {
+      name: "Full name",
+      email: "Email",
+      phone: "Phone / WhatsApp",
+      interest: "I'm interested in",
+      message: "Message",
+      submit: "Send Enquiry",
+      note: "Prefer WhatsApp? Use the button in the corner of the page.",
+      botLabel: "Leave this field empty:",
+      general: "General enquiry",
+      selling: "Selling my property",
+      renting: "Renting / Investment advisory",
+      moving: null,
+    };
+---
+<form id="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" data-contact-email={business.email} novalidate>
+  <input type="hidden" name="form-name" value="contact">
+  <div style="position:absolute;left:-9999px" aria-hidden="true">
+    <label>{t.botLabel} <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+  </div>
+  <div class="field-row">
+    <div class="field">
+      <label for="name">{t.name}</label>
+      <input type="text" id="name" name="name" required autocomplete="name">
+    </div>
+    <div class="field">
+      <label for="email">{t.email}</label>
+      <input type="email" id="email" name="email" required autocomplete="email">
+    </div>
+  </div>
+  <div class="field-row">
+    <div class="field">
+      <label for="phone">{t.phone}</label>
+      <input type="tel" id="phone" name="phone" autocomplete="tel">
+    </div>
+    <div class="field">
+      <label for="interest">{t.interest}</label>
+      <select id="interest" name="interest">
+        <option value={t.general}>{t.general}</option>
+        {propertyTitles.map((title) => <option value={title}>{title}</option>)}
+        <option value={t.selling}>{t.selling}</option>
+        <option value={t.renting}>{t.renting}</option>
+        {t.moving && <option value={t.moving}>{t.moving}</option>}
+      </select>
+    </div>
+  </div>
+  <div class="field">
+    <label for="message">{t.message}</label>
+    <textarea id="message" name="message" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary btn-block">{t.submit}</button>
+  <p class="form-status" role="status"></p>
+  <p class="form-note">{t.note}</p>
+</form>

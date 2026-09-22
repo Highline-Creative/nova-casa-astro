@@ -1,0 +1,180 @@
+---
+import business from "../content/business.json";
+
+interface Props {
+  lang: "en" | "pt-br";
+  title: string;
+  description: string;
+  ogPath: string; // e.g. "/", "/faq", "/properties/rukan"
+  currentNav?: "home" | "properties" | "about" | "services" | "faq" | "contact";
+}
+
+const { lang, title, description, ogPath, currentNav } = Astro.props;
+const isPt = lang === "pt-br";
+const siteUrl = "https://novacasadubai.com";
+const base = isPt ? "/pt-br" : "";
+
+const t = isPt
+  ? {
+      skip: "Ir para o conteúdo",
+      home: "Início",
+      properties: "Imóveis",
+      about: "Sobre",
+      services: "Serviços",
+      faq: "Guia & FAQ",
+      contact: "Contato",
+      cta: "Fale Conosco",
+      ctaShort: "Contato",
+      toggleAria: "Abrir menu",
+      langSwitch: "EN",
+      footerExplore: "Navegue",
+      footerProperties: "Imóveis",
+      footerContact: "Contato",
+      whatsappAria: "Conversar com a Nova Casa no WhatsApp",
+    }
+  : {
+      skip: "Skip to content",
+      home: "Home",
+      properties: "Properties",
+      about: "About",
+      services: "Services",
+      faq: "Dubai Guide & FAQ",
+      contact: "Contact",
+      cta: "Get in Touch",
+      ctaShort: "Contact",
+      toggleAria: "Toggle menu",
+      langSwitch: "PT",
+      footerExplore: "Explore",
+      footerProperties: "Properties",
+      footerContact: "Contact",
+      whatsappAria: "Chat with Nova Casa on WhatsApp",
+    };
+
+const propertyLinks = isPt
+  ? [
+      ["jumeirah-bay", "Duplex JLT"],
+      ["rukan", "Apartamento Rukan"],
+      ["al-furjan-villa", "Vila Al Furjan"],
+      ["ayat-oasis", "Ayat Oasis (Venda)"],
+      ["ayat-oasis-rent", "Ayat Oasis (Aluguel)"],
+      ["binghatti-creek", "Binghatti Creek"],
+      ["sycamore-damac-hills-2", "Sycamore, DAMAC Hills 2"],
+      ["norton-court", "Norton Court"],
+    ]
+  : [
+      ["jumeirah-bay", "JLT Duplex"],
+      ["rukan", "Rukan Apartment"],
+      ["al-furjan-villa", "Al Furjan Villa"],
+      ["ayat-oasis", "Ayat Oasis (Sale)"],
+      ["ayat-oasis-rent", "Ayat Oasis (Rent)"],
+      ["binghatti-creek", "Binghatti Creek"],
+      ["sycamore-damac-hills-2", "Sycamore, DAMAC Hills 2"],
+      ["norton-court", "Norton Court"],
+    ];
+
+// href for the language-switch link: same page, other language
+function langSwitchHref() {
+  if (isPt) {
+    return ogPath === "/pt-br" ? "/" : ogPath.replace(/^\/pt-br/, "");
+  }
+  return ogPath === "/" ? "/pt-br" : `/pt-br${ogPath}`;
+}
+---
+<!doctype html>
+<html lang={lang === "pt-br" ? "pt-BR" : "en"}>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{title}</title>
+<meta name="description" content={description}>
+<meta property="og:type" content="website">
+<meta property="og:title" content={title}>
+<meta property="og:description" content={description}>
+<meta property="og:image" content={`${siteUrl}/assets/img/logo-gold-square.png`}>
+<meta property="og:url" content={`${siteUrl}${ogPath === "/" ? "/" : ogPath}`}>
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/img/logo.webp">
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">{t.skip}</a>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href={base || "/"} aria-label="Nova Casa Real Estate">
+      <img src="/assets/img/logo.webp" alt="Nova Casa Real Estate">
+    </a>
+    <nav class="nav-links" id="nav-links" data-open="false" aria-label="Primary">
+      <a href={base || "/"} aria-current={currentNav === "home" ? "page" : undefined}>{t.home}</a>
+      <a href={`${base || "/"}#properties`} aria-current={currentNav === "properties" ? "page" : undefined}>{t.properties}</a>
+      <a href={`${base || "/"}#about`}>{t.about}</a>
+      <a href={`${base || "/"}#services`}>{t.services}</a>
+      <a href={`${base}/faq`} aria-current={currentNav === "faq" ? "page" : undefined}>{t.faq}</a>
+      <a href={`${base || "/"}#contact`}>{t.contact}</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="lang-switch" href={langSwitchHref()}>{t.langSwitch}</a>
+      <a class="btn btn-outline" href={`${base || "/"}#contact`}><span class="long">{t.cta}</span><span class="short">{t.ctaShort}</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label={t.toggleAria} aria-expanded="false" aria-controls="nav-links">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <slot />
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="/assets/img/logo-footer.webp" alt="Nova Casa Real Estate">
+      <p><slot name="footer-tagline" /></p>
+    </div>
+    <div class="footer-col">
+      <h4>{t.footerExplore}</h4>
+      <a href={`${base || "/"}#properties`}>{t.properties}</a>
+      <a href={`${base || "/"}#about`}>{t.about}</a>
+      <a href={`${base || "/"}#services`}>{t.services}</a>
+      <a href={`${base}/faq`}>{t.faq}</a>
+    </div>
+    <div class="footer-col">
+      <h4>{t.footerProperties}</h4>
+      {propertyLinks.map(([slug, label]) => (
+        <a href={`${base}/properties/${slug}`}>{label}</a>
+      ))}
+    </div>
+    <div class="footer-col">
+      <h4>{t.footerContact}</h4>
+      <a href={`tel:${business.phoneHref}`}>{business.phone}</a>
+      <a href={`mailto:${business.email}`}>{business.email}</a>
+      <a href={business.youtubeUrl} target="_blank" rel="noopener">{isPt ? "Canal no YouTube" : "YouTube Channel"}</a>
+      <a href={business.bayutUrl} target="_blank" rel="noopener">{isPt ? "Ver no Bayut" : "View on Bayut"}</a>
+      <li>RERA {isPt ? "Nº" : "No."} {business.rera}</li>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span data-year></span> Nova Casa Real Estate LLC. {isPt ? "Todos os direitos reservados." : "All rights reserved."}</span>
+    <slot name="footer-bottom-right"><span>Dubai, {isPt ? "EAU" : "UAE"}</span></slot>
+  </div>
+</footer>
+
+<a class="whatsapp-float" data-whatsapp="" aria-label={t.whatsappAria}>
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.7 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.1.2-3.6-.8-3-1.2-4.9-4.2-5-4.4-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.2.1.3 0 .5-.1.2-.1.3-.3.5l-.4.5c-.1.2-.3.3-.1.6.2.3.9 1.5 2 2.4 1.4 1.2 2.5 1.6 2.8 1.7.3.1.5.1.7-.1.2-.2.7-.8.9-1.1.2-.3.4-.2.7-.1.3.1 1.7.8 2 .9.3.2.5.2.6.3.1.2.1.9-.1 1.6Z"/></svg>
+</a>
+
+<div class="lightbox" id="lightbox" data-open="false">
+  <button class="lightbox-close" aria-label={isPt ? "Fechar" : "Close"}>✕</button>
+  <button class="lightbox-prev" aria-label={isPt ? "Foto anterior" : "Previous photo"}>‹</button>
+  <img src="" alt={isPt ? "Foto ampliada do imóvel" : "Enlarged property photo"}>
+  <button class="lightbox-next" aria-label={isPt ? "Próxima foto" : "Next photo"}>›</button>
+  <span class="lightbox-count"></span>
+</div>
+
+<script define:vars={{ whatsappNumber: business.whatsappNumber }}>
+  window.__NOVA_CASA_WHATSAPP__ = whatsappNumber;
+</script>
+<script is:inline src="/assets/js/site.js"></script>
+</body>
+</html>

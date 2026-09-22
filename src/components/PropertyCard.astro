@@ -1,0 +1,46 @@
+---
+interface Props {
+  slug: string;
+  href: string;
+  title: string;
+  location: string;
+  price: string;
+  purpose: string;
+  beds: number;
+  baths: number;
+  size: string;
+  image?: string;
+  lang: "en" | "pt-br";
+}
+
+const { href, title, location, price, purpose, beds, baths, size, image, lang } = Astro.props;
+const isPt = lang === "pt-br";
+const sizeShort = size.split(" (")[0];
+const bedsLabel = isPt ? "Quarto" + (beds === 1 ? "" : "s") : "Bed" + (beds === 1 ? "" : "s");
+const bathsLabel = isPt ? "Banheiro" + (baths === 1 ? "" : "s") : "Bath" + (baths === 1 ? "" : "s");
+const viewDetails = isPt ? "Ver Detalhes" : "View Details";
+const photosSoon = isPt ? "Fotos em breve" : "Photos coming soon";
+---
+<article class="property-card">
+  <a href={href} class="property-media" aria-label={`${viewDetails}: ${title}`}>
+    <span class="badge">{purpose}</span>
+    {image ? (
+      <img src={image} alt={`${title} in ${location}`} loading="lazy" width="640" height="480">
+    ) : (
+      <div class="property-media-placeholder">{photosSoon}</div>
+    )}
+  </a>
+  <div class="property-body">
+    <div class="property-price">{price}</div>
+    <div class="property-title">{title}</div>
+    <div class="property-loc">{location}</div>
+    <div class="property-specs">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6"/><path d="M3 18h18"/><path d="M3 12V9a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v3"/><path d="M14 12V9a1 1 0 0 1 1-1h4a2 2 0 0 1 2 2v2"/></svg> {beds} {bedsLabel}</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 12h16v3a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4v-3Z"/><path d="M7 12V6a2 2 0 0 1 3.2-1.6"/><path d="M4 19v1M18 19v1"/></svg> {baths} {bathsLabel}</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg> {sizeShort}</span>
+    </div>
+    <a class="property-link" href={href}>
+      {viewDetails} <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" style="width:14px;height:14px"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</article>

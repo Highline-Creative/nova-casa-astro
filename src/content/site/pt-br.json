@@ -1,0 +1,43 @@
+{
+  "heroEyebrow": "Nova Casa Real Estate · Dubai, EAU",
+  "heroTitle": "Seu caminho para investir e viver em Dubai, em português.",
+  "heroLede": "Ajudamos brasileiros a comprar, investir e se mudar para Dubai com segurança — da escolha do imóvel à obtenção do visto, com um atendimento próximo, transparente e sem burocracia desnecessária.",
+  "heroImage": "/assets/img/properties/al-furjan-villa/04.jpg",
+  "heroImageAlt": "Hall de entrada elegante com pé-direito duplo e escada de vidro em uma vila de luxo da Nova Casa, Al Furjan West, Dubai",
+  "statListings": "8",
+  "statPriceRange": "AED 800 mil–12,5 mi",
+  "trustItems": [
+    "Registrada na RERA — Licença Nº 49747",
+    "Atendimento Pessoal, Direto com a Fundadora",
+    "Especialista em Investidores Brasileiros",
+    "Propriedade Freehold (100% sua)"
+  ],
+  "propertiesEyebrow": "Portfólio",
+  "propertiesTitle": "Imóveis em destaque em Dubai",
+  "propertiesLede": "Uma seleção de apartamentos e vilas freehold atualmente representados pela Nova Casa Real Estate.",
+  "agentRole": "Corretora de Imóveis, Nova Casa Real Estate",
+  "agentBio": "A Carla mora em Dubai desde 2018 e atua no mercado imobiliário da cidade desde 2022. Brasileira, ela entende as dúvidas e preocupações de quem investe de longe — e acompanha pessoalmente cada cliente, do primeiro contato até a entrega das chaves.",
+  "aboutEyebrow": "Sobre a Nova Casa",
+  "aboutTitle": "Ponte entre o Brasil e o mercado imobiliário de Dubai.",
+  "aboutParagraphs": [
+    "A Nova Casa Real Estate é uma empresa dinâmica de Dubai, fundada por uma empreendedora brasileira com o objetivo de conectar brasileiros a oportunidades imobiliárias excepcionais em uma das cidades mais vibrantes do mundo.",
+    "Combinamos a visão de quem entende as duas realidades — Brasil e Emirados — com conhecimento profundo do mercado local, ajudando clientes a comprar, vender e investir em imóveis residenciais e comerciais premium em Dubai. Trabalhamos com transparência total, atendimento personalizado e relacionamento de longo prazo.",
+    "Com foco em confiança, profissionalismo e clareza, a Nova Casa torna a jornada imobiliária simples — seja pra comprar a casa dos sonhos, buscar um investimento rentável, ou dar o primeiro passo rumo à mudança para Dubai."
+  ],
+  "servicesEyebrow": "Serviços",
+  "servicesTitle": "Como a Nova Casa pode ajudar",
+  "servicesLede": "Seja qual for a etapa da sua jornada rumo a Dubai, a Nova Casa oferece orientação sob medida.",
+  "services": [
+    { "title": "Comprar", "text": "Acesso a apartamentos e vilas freehold selecionados, com acompanhamento em visitas, negociação e todo o processo de transferência na DLD." },
+    { "title": "Vender", "text": "Precificação estratégica, apresentação profissional e acesso a uma rede de compradores qualificados, locais e internacionais." },
+    { "title": "Alugar", "text": "Suporte para proprietários e inquilinos, do anúncio à triagem, incluindo registro no Ejari e gestão do contrato." },
+    { "title": "Consultoria de Investimento e Mudança", "text": "Orientação para brasileiros avaliando rentabilidade, valorização e as opções de visto vinculadas a investimento imobiliário." }
+  ],
+  "faqTeaserEyebrow": "Guia para Brasileiros",
+  "faqTeaserTitle": "Curioso sobre investir em Dubai?",
+  "faqTeaserLede": "Reunimos as perguntas mais comuns de quem está começando a pesquisar — sem enrolação, e sem precisar ter todas as respostas antes de conversar com a gente.",
+  "contactEyebrow": "Contato",
+  "contactTitle": "Vamos conversar sobre seu próximo passo em Dubai.",
+  "contactLede": "Conte o que você procura e a Carla vai te responder pessoalmente, em português.",
+  "footerTagline": "Seu caminho, em português, para investir e viver no mercado imobiliário de Dubai."
+}
