@@ -386,7 +386,7 @@ section{ padding: var(--space-8) 0; }
 
 /* ---------- Video tour ---------- */
 .video-tour{ margin: var(--space-6) 0; }
-.video-embed{ position: relative; width:100%; height:0; padding-top:56.25%; background: var(--paper-deep); overflow:hidden; }
+.video-embed{ position: relative; width:100%; max-width:900px; height:0; padding-top: min(56.25%, 506px); background: var(--paper-deep); overflow:hidden; }
 .video-embed iframe{ position:absolute; top:0; left:0; right:0; bottom:0; width:100%; height:100%; border:0; }
 
 /* ---------- Verify / external credential links ---------- */
