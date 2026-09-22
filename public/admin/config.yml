@@ -11,6 +11,8 @@ collections:
     folder: "src/content/properties/en"
     create: true
     delete: true
+    extension: "json"
+    format: "json"
     identifier_field: title
     fields:
       - { label: "Ordem de exibição", name: "order", widget: "number", default: 99 }
@@ -44,6 +46,8 @@ collections:
     folder: "src/content/properties/pt-br"
     create: true
     delete: true
+    extension: "json"
+    format: "json"
     identifier_field: title
     fields:
       - { label: "Ordem de exibição", name: "order", widget: "number", default: 99 }
@@ -77,6 +81,8 @@ collections:
     folder: "src/content/faq/en"
     create: true
     delete: true
+    extension: "json"
+    format: "json"
     identifier_field: question
     fields:
       - label: "Categoria"
@@ -93,6 +99,8 @@ collections:
     folder: "src/content/faq/pt-br"
     create: true
     delete: true
+    extension: "json"
+    format: "json"
     identifier_field: question
     fields:
       - label: "Categoria"
@@ -106,6 +114,8 @@ collections:
 
   - name: "geral"
     label: "Textos e Dados Gerais"
+    extension: "json"
+    format: "json"
     files:
       - file: "src/content/business.json"
         label: "Dados da Empresa"
