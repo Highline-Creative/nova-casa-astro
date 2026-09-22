@@ -1,5 +1,6 @@
 backend:
-  name: test-repo
+  name: git-gateway
+  branch: main
 
 media_folder: "public/assets/img/properties"
 public_folder: "/assets/img/properties"
