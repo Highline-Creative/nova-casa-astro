@@ -123,8 +123,9 @@ p{ margin: 0 0 var(--space-3); color: var(--ink-soft); }
 }
 .btn-primary{ background: var(--ink); color: var(--paper); }
 .btn-primary:hover{ background: #2b2a26; border-color:#2b2a26; }
+.btn-gold-hover:hover{ background: var(--gold-soft); border-color: var(--gold-soft); }
 .btn-outline{ background: transparent; color: var(--ink); }
-.btn-outline:hover{ background: var(--ink); color: var(--paper); }
+.btn-outline:hover{ background: var(--gold-soft); border-color: var(--gold-soft); color: var(--paper); }
 .btn-ghost-inverse{ border-color: var(--paper); color: var(--paper); }
 .btn-ghost-inverse:hover{ background: var(--paper); color: var(--ink); }
 .btn-whatsapp{ background: #25D366; border-color: #25D366; color: #fff; }
@@ -170,7 +171,7 @@ p{ margin: 0 0 var(--space-3); color: var(--ink-soft); }
   border:1px solid var(--line); border-radius: var(--radius);
   padding: .4rem .65rem; color: var(--ink); white-space:nowrap;
 }
-.lang-switch:hover{ background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.lang-switch:hover{ background: var(--gold-soft); color: var(--paper); border-color: var(--gold-soft); }
 .nav-toggle{
   display:none; background:none; border:1px solid var(--ink); border-radius: var(--radius);
   width:44px; height:44px; align-items:center; justify-content:center;
