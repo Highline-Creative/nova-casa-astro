@@ -209,7 +209,7 @@ p{ margin: 0 0 var(--space-3); color: var(--ink-soft); }
   background: linear-gradient(180deg, rgba(13,13,13,.15) 0%, rgba(13,13,13,.35) 55%, rgba(13,13,13,.88) 100%);
 }
 .hero-content{ position:relative; z-index:2; padding-bottom: var(--space-8); width:100%; }
-.hero-content .eyebrow{ color: var(--gold-soft); }
+.hero-content .eyebrow{ color: rgba(255,255,255,.7); }
 .hero-content h1{ color:var(--paper); max-width: 16ch; }
 .hero-content p{ color: rgba(255,255,255,.82); }
 .hero-actions{ display:flex; gap: var(--space-3); margin-top: var(--space-5); flex-wrap:wrap; }
