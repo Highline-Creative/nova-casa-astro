@@ -1,6 +1,8 @@
 backend:
   name: git-gateway
   branch: main
+  identity_url: https://novacasadubai.com/.netlify/identity
+  gateway_url: https://novacasadubai.com/.netlify/functions
 
 publish_mode: editorial_workflow
 
