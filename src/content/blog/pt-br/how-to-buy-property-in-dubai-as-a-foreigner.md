@@ -24,7 +24,7 @@ Você não precisa de visto ou residência nos Emirados para comprar. O que voc�
 - Comprovação de recursos ou pré-aprovação de financiamento, caso vá financiar
 - Uma conta bancária nos Emirados ajuda, mas não é obrigatória para a compra em si
 
-Não residentes conseguem financiamento em Dubai, mas os limites de financiamento são mais rígidos — normalmente entre 50% e 60% do valor do imóvel, dependendo do banco e da faixa de preço. Residentes dos Emirados comprando o primeiro imóvel abaixo de AED 5 milhões costumam conseguir até 80%.
+Não residentes também conseguem financiamento em Dubai, embora a entrada exigida costume ser maior e varie conforme o banco, o tipo de imóvel e o perfil do comprador.
 
 ## 3. Faça a proposta e assine o MOU
 
@@ -36,18 +36,18 @@ A incorporadora do vendedor emite o NOC confirmando que não há taxas de servi�
 
 ## 5. Transfira a propriedade na DLD
 
-Com o NOC em mãos, comprador e vendedor se encontram num escritório fiduciário de registro da DLD para concluir a transferência. O comprador paga o saldo restante (geralmente via cheque administrativo), e a DLD cobra uma taxa de transferência de 4% do valor de compra, dividida por convenção entre comprador e vendedor — embora, na prática do mercado atual de Dubai, os compradores costumem arcar com os 4% inteiros. Sempre confirme quem paga o quê antes de assinar.
+Com o NOC em mãos, comprador e vendedor se encontram num escritório fiduciário de registro da DLD para concluir a transferência. O comprador paga o saldo restante (geralmente via cheque administrativo). A taxa de transferência da Dubai Land Department (DLD) é de 4% do valor de compra — por padrão, ela costuma ser dividida entre comprador e vendedor, embora na prática o comprador possa concordar em arcar com os 4% inteiros, dependendo da negociação. Sempre confirme quem paga o quê antes de assinar.
 
 ## 6. Receba a escritura (title deed)
 
-Assim que a transferência é registrada, a DLD emite a escritura em seu nome — o mesmo documento legal de propriedade que um cidadão dos Emirados receberia. A partir daí, o imóvel é totalmente seu: você pode morar nele, alugar, vender, ou usá-lo para uma solicitação de Golden Visa dos Emirados, se o valor for elegível.
+Assim que a transferência é registrada, a DLD emite a escritura em seu nome — o mesmo documento legal de propriedade que um cidadão dos Emirados receberia. A partir daí, o imóvel é totalmente seu: você pode morar nele, alugar, vender, ou usá-lo numa solicitação de Golden Visa dos Emirados — investidores em imóveis podem se qualificar para o Golden Visa de 10 anos a partir de um investimento de AED 2 milhões.
 
 ## Quanto isso custa, no total
 
 Além do valor de compra, considere no orçamento:
 
 - **Taxa de transferência da DLD:** 4% do valor de compra
-- **Taxa administrativa da DLD:** AED 580 (apartamentos) ou AED 430 (terrenos)
+- **Taxas de registro e administrativas da DLD:** variam conforme o imóvel e o tipo de transação
 - **Comissão da imobiliária:** normalmente 2% do valor de compra
 - **Taxa do NOC:** AED 500–5.000, definida pela incorporadora
 - **Taxa de registro do financiamento** (se houver): 0,25% do valor do empréstimo

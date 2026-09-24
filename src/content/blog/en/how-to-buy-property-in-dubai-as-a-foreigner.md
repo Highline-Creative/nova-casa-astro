@@ -24,7 +24,7 @@ You don't need a UAE visa or residency to buy. What you do need is:
 - Proof of funds or a mortgage pre-approval if you're financing
 - A UAE bank account is helpful but not mandatory for the purchase itself
 
-Non-residents can get a mortgage in Dubai, though loan-to-value limits are stricter — typically 50–60% of the property's value, depending on the bank and price bracket. UAE residents buying their first home under AED 5 million can usually borrow up to 80%.
+Non-residents can get a mortgage in Dubai too, though down-payment requirements are generally higher and vary by bank, property type and buyer profile.
 
 ## 3. Make an offer and sign the MOU
 
@@ -36,18 +36,18 @@ The seller's developer issues an NOC confirming there are no outstanding service
 
 ## 5. Transfer ownership at the DLD
 
-With the NOC in hand, buyer and seller meet at a DLD registration trustee office to complete the transfer. The buyer pays the remaining balance (usually via manager's cheque), and the DLD charges a transfer fee of 4% of the purchase price, split by convention between buyer and seller — though in practice in Dubai's current market, buyers often cover the full 4%. Always confirm who is paying what before you sign.
+With the NOC in hand, buyer and seller meet at a DLD registration trustee office to complete the transfer. The buyer pays the remaining balance (usually via manager's cheque). The Dubai Land Department (DLD) transfer fee is 4% of the purchase price — by default it's generally split between buyer and seller, though in practice the buyer may agree to pay the full 4% depending on the transaction. Always confirm who is paying what before you sign.
 
 ## 6. Receive your title deed
 
-Once the transfer is registered, the DLD issues the title deed in your name — the same legal ownership document a UAE national would receive. From this point, the property is fully yours: you can live in it, rent it out, sell it, or use it toward a UAE Golden Visa application if the value qualifies.
+Once the transfer is registered, the DLD issues the title deed in your name — the same legal ownership document a UAE national would receive. From this point, the property is fully yours: you can live in it, rent it out, sell it, or put it toward a UAE Golden Visa application — property investors can qualify for the 10-year Golden Visa once their investment meets the AED 2 million threshold.
 
 ## What this actually costs, all in
 
 Beyond the purchase price, budget for:
 
 - **DLD transfer fee:** 4% of the purchase price
-- **DLD admin fee:** AED 580 (apartments) or AED 430 (land)
+- **DLD registration and administrative fees:** these vary depending on the property and transaction type
 - **Agency commission:** typically 2% of the purchase price
 - **NOC fee:** AED 500–5,000, set by the developer
 - **Mortgage registration fee** (if financing): 0.25% of the loan amount
