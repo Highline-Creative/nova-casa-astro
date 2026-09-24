@@ -1,0 +1,47 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const posts = (await getCollection("blog-en")).sort(
+  (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
+);
+
+const dateFmt = (d: Date) => d.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+---
+<BaseLayout
+  lang="en"
+  title="Dubai Real Estate Blog | Nova Casa Real Estate"
+  description="Guides on buying, renting and investing in Dubai real estate, written by Nova Casa Real Estate — freehold ownership, DLD fees, area guides and market insight."
+  ogPath="/blog"
+  currentNav="blog"
+>
+  <div class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Nova Casa Blog</span>
+      <h1>Guides and insight on buying, renting and investing in Dubai.</h1>
+      <p class="lede">Practical, no-fluff articles from Nova Casa Real Estate — written for people who are actually considering a purchase, not just browsing.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="blog-grid">
+        {posts.map((post) => (
+          <a class="blog-card" href={`/blog/${post.id}`}>
+            <div class="blog-card-media">
+              <img src={post.data.coverImage} alt={post.data.coverAlt} loading="lazy">
+              <span class="badge">{post.data.pillar}</span>
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-card-date">{dateFmt(post.data.publishDate)}</span>
+              <h3>{post.data.title}</h3>
+              <p>{post.data.excerpt}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <Fragment slot="footer-tagline">A more personalised path into Dubai's residential and commercial property market.</Fragment>
+</BaseLayout>

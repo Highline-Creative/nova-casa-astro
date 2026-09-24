@@ -153,8 +153,8 @@
           ? `Oi Carla, tenho interesse em: ${context}. Pode me passar mais informações?\n\nAnúncio: ${pageUrl}`
           : `Hi Carla, I'm interested in: ${context}. Could you share more information?\n\nListing: ${pageUrl}`
         : isPt
-        ? "Oi Carla, gostaria de mais informações sobre os imóveis em Dubai."
-        : "Hi Carla, I'd like more information about your properties in Dubai.";
+        ? `Oi Carla, gostaria de mais informações sobre os imóveis em Dubai.\n\nEnviado pelo site: ${pageUrl}`
+        : `Hi Carla, I'd like more information about your properties in Dubai.\n\nSent from: ${pageUrl}`;
       const text = encodeURIComponent(message);
       el.setAttribute("href", `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`);
       el.setAttribute("target", "_blank");

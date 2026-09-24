@@ -37,6 +37,16 @@ const faqSchema = z.object({
   openByDefault: z.boolean().optional(),
 });
 
+const blogSchema = z.object({
+  title: z.string(),
+  pillar: z.string(),
+  excerpt: z.string(),
+  publishDate: z.date(),
+  coverImage: z.string(),
+  coverAlt: z.string(),
+  author: z.string().default("Carla Santos"),
+});
+
 export const collections = {
   "properties-en": defineCollection({
     loader: glob({ pattern: "*.json", base: "./src/content/properties/en" }),
@@ -53,5 +63,13 @@ export const collections = {
   "faq-pt": defineCollection({
     loader: glob({ pattern: "*.json", base: "./src/content/faq/pt-br" }),
     schema: faqSchema,
+  }),
+  "blog-en": defineCollection({
+    loader: glob({ pattern: "*.md", base: "./src/content/blog/en" }),
+    schema: blogSchema,
+  }),
+  "blog-pt": defineCollection({
+    loader: glob({ pattern: "*.md", base: "./src/content/blog/pt-br" }),
+    schema: blogSchema,
   }),
 };

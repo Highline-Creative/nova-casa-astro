@@ -6,7 +6,7 @@ interface Props {
   title: string;
   description: string;
   ogPath: string; // e.g. "/", "/faq", "/properties/rukan"
-  currentNav?: "home" | "properties" | "about" | "services" | "faq" | "contact";
+  currentNav?: "home" | "properties" | "about" | "services" | "faq" | "blog" | "contact";
 }
 
 const { lang, title, description, ogPath, currentNav } = Astro.props;
@@ -21,7 +21,8 @@ const t = isPt
       properties: "Imóveis",
       about: "Sobre",
       services: "Serviços",
-      faq: "Guia & FAQ",
+      faq: "Perguntas Frequentes",
+      blog: "Blog",
       contact: "Contato",
       cta: "Fale Conosco",
       ctaShort: "Contato",
@@ -39,6 +40,7 @@ const t = isPt
       about: "About",
       services: "Services",
       faq: "Dubai Guide & FAQ",
+      blog: "Blog",
       contact: "Contact",
       cta: "Get in Touch",
       ctaShort: "Contact",
@@ -110,6 +112,7 @@ function langSwitchHref() {
       <a href={`${base || "/"}#about`}>{t.about}</a>
       <a href={`${base || "/"}#services`}>{t.services}</a>
       <a href={`${base}/faq`} aria-current={currentNav === "faq" ? "page" : undefined}>{t.faq}</a>
+      <a href={`${base}/blog`} aria-current={currentNav === "blog" ? "page" : undefined}>{t.blog}</a>
       <a href={`${base || "/"}#contact`}>{t.contact}</a>
     </nav>
     <div class="nav-cta">
@@ -138,6 +141,7 @@ function langSwitchHref() {
       <a href={`${base || "/"}#about`}>{t.about}</a>
       <a href={`${base || "/"}#services`}>{t.services}</a>
       <a href={`${base}/faq`}>{t.faq}</a>
+      <a href={`${base}/blog`}>{t.blog}</a>
     </div>
     <div class="footer-col">
       <h4>{t.footerProperties}</h4>

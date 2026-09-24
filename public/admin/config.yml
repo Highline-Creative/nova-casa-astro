@@ -114,6 +114,46 @@ collections:
       - { label: "Answer", name: "answer", widget: "text" }
       - { label: "Open by default?", name: "openByDefault", widget: "boolean", required: false, default: false }
 
+  - name: "blog-en"
+    label: "Blog (EN)"
+    folder: "src/content/blog/en"
+    create: true
+    delete: true
+    extension: "md"
+    format: "frontmatter"
+    identifier_field: title
+    media_folder: "/public/assets/img/blog"
+    public_folder: "/assets/img/blog"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Category", name: "pillar", widget: "select", options: ["Buying", "Area Guide", "Investment", "Living", "Property Type", "Nova Casa", "Guide"] }
+      - { label: "Excerpt (shown on the blog list)", name: "excerpt", widget: "text" }
+      - { label: "Publish date", name: "publishDate", widget: "datetime" }
+      - { label: "Cover photo", name: "coverImage", widget: "image" }
+      - { label: "Cover photo alt text", name: "coverAlt", widget: "string" }
+      - { label: "Author", name: "author", widget: "string", default: "Carla Santos" }
+      - { label: "Article body", name: "body", widget: "markdown" }
+
+  - name: "blog-pt"
+    label: "Blog (PT-BR)"
+    folder: "src/content/blog/pt-br"
+    create: true
+    delete: true
+    extension: "md"
+    format: "frontmatter"
+    identifier_field: title
+    media_folder: "/public/assets/img/blog"
+    public_folder: "/assets/img/blog"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Categoria", name: "pillar", widget: "select", options: ["Compra", "Área", "Investimento", "Vida", "Tipo de Imóvel", "Nova Casa", "Guia"] }
+      - { label: "Resumo (aparece na listagem)", name: "excerpt", widget: "text" }
+      - { label: "Data de publicação", name: "publishDate", widget: "datetime" }
+      - { label: "Foto de capa", name: "coverImage", widget: "image" }
+      - { label: "Texto alternativo da foto", name: "coverAlt", widget: "string" }
+      - { label: "Autor(a)", name: "author", widget: "string", default: "Carla Santos" }
+      - { label: "Corpo do artigo", name: "body", widget: "markdown" }
+
   - name: "geral"
     label: "General Site Content"
     extension: "json"
