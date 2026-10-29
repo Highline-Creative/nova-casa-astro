@@ -1,4 +1,5 @@
 ---
+pageSlug: "how-to-buy-property-in-dubai-as-a-foreigner"
 title: "Como Comprar Imóvel em Dubai Sendo Estrangeiro: Passo a Passo"
 pillar: "Compra"
 excerpt: "Estrangeiros podem ser donos de imóveis em Dubai sem sócio local e sem precisar de visto de residência para comprar. Aqui está o processo exato, da escolha da área freehold até o registro da escritura na DLD."

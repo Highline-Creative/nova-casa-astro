@@ -1,4 +1,5 @@
 ---
+pageSlug: "how-to-buy-property-in-dubai-as-a-foreigner"
 title: "How to Buy Property in Dubai as a Foreigner: Step-by-Step"
 pillar: "Buying"
 excerpt: "Foreigners can own property outright in Dubai's freehold areas — no local sponsor, no residency requirement to purchase. Here's the exact process, from choosing a freehold zone to registering the title deed with the DLD."

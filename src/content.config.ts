@@ -2,6 +2,7 @@ import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
 
 const propertySchema = z.object({
+  pageSlug: z.string().optional(),
   order: z.number().default(999),
   title: z.string(),
   subtitle: z.string(),
@@ -38,6 +39,7 @@ const faqSchema = z.object({
 });
 
 const blogSchema = z.object({
+  pageSlug: z.string().optional(),
   title: z.string(),
   pillar: z.string(),
   excerpt: z.string(),

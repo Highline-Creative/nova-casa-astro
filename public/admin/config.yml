@@ -16,7 +16,9 @@ collections:
     extension: "json"
     format: "json"
     identifier_field: title
+    slug: "{{fields.pageSlug}}"
     fields:
+      - { label: "Page address (use the SAME in EN and PT-BR)", name: "pageSlug", widget: "string", hint: "Lowercase letters, numbers and hyphens only. Example: norton-court. Must be identical in the English and Portuguese versions.", pattern: ['^[a-z0-9]+(-[a-z0-9]+)*$', "Use only lowercase letters, numbers and hyphens (e.g. norton-court)"] }
       - { label: "Display order", name: "order", widget: "number", default: 99 }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Subtitle", name: "subtitle", widget: "string" }
@@ -51,7 +53,9 @@ collections:
     extension: "json"
     format: "json"
     identifier_field: title
+    slug: "{{fields.pageSlug}}"
     fields:
+      - { label: "Page address (use the SAME in EN and PT-BR)", name: "pageSlug", widget: "string", hint: "Lowercase letters, numbers and hyphens only. Example: norton-court. Must be identical in the English and Portuguese versions.", pattern: ['^[a-z0-9]+(-[a-z0-9]+)*$', "Use only lowercase letters, numbers and hyphens (e.g. norton-court)"] }
       - { label: "Display order", name: "order", widget: "number", default: 99 }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Subtitle", name: "subtitle", widget: "string" }
@@ -122,9 +126,11 @@ collections:
     extension: "md"
     format: "frontmatter"
     identifier_field: title
+    slug: "{{fields.pageSlug}}"
     media_folder: "/public/assets/img/blog"
     public_folder: "/assets/img/blog"
     fields:
+      - { label: "Page address (use the SAME in EN and PT-BR)", name: "pageSlug", widget: "string", hint: "Lowercase letters, numbers and hyphens only. Example: norton-court. Must be identical in the English and Portuguese versions.", pattern: ['^[a-z0-9]+(-[a-z0-9]+)*$', "Use only lowercase letters, numbers and hyphens (e.g. norton-court)"] }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Category", name: "pillar", widget: "select", options: ["Buying", "Area Guide", "Investment", "Living", "Property Type", "Nova Casa", "Guide"] }
       - { label: "Excerpt (shown on the blog list)", name: "excerpt", widget: "text" }
@@ -142,9 +148,11 @@ collections:
     extension: "md"
     format: "frontmatter"
     identifier_field: title
+    slug: "{{fields.pageSlug}}"
     media_folder: "/public/assets/img/blog"
     public_folder: "/assets/img/blog"
     fields:
+      - { label: "Endereço da página (use o MESMO em inglês e português)", name: "pageSlug", widget: "string", hint: "Só letras minúsculas, números e hífens. Exemplo: como-comprar-imovel. Precisa ser idêntico nas versões em inglês e em português.", pattern: ['^[a-z0-9]+(-[a-z0-9]+)*$', "Use só letras minúsculas, números e hífens (ex.: norton-court)"] }
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Categoria", name: "pillar", widget: "select", options: ["Compra", "Área", "Investimento", "Vida", "Tipo de Imóvel", "Nova Casa", "Guia"] }
       - { label: "Resumo (aparece na listagem)", name: "excerpt", widget: "text" }

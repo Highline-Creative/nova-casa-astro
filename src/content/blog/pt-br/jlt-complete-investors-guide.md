@@ -1,4 +1,5 @@
 ---
+pageSlug: "jlt-complete-investors-guide"
 title: "Jumeirah Lake Towers (JLT): O Guia Completo para Investidores"
 pillar: "Área"
 excerpt: "JLT oferece um dos melhores custos por metro quadrado entre os apartamentos freehold de Dubai, vistas para o lago e para a marina, e uma linha de metrô passando bem no meio da comunidade. Veja como é, na prática, ser dono ali."

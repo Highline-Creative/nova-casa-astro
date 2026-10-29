@@ -1,4 +1,5 @@
 ---
+pageSlug: "jlt-complete-investors-guide"
 title: "Jumeirah Lake Towers (JLT): The Complete Investor's Guide"
 pillar: "Area Guide"
 excerpt: "JLT offers some of Dubai's best value-per-square-foot freehold apartments, lake and marina views, and a metro line running straight through it. Here's what it's actually like to own there."
